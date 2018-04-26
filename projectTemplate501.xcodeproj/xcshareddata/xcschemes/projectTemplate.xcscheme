@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7F55BE6EF9A59563C4B2B355"
-               BuildableName = "projectTemplate45.app"
+               BuildableName = "projectTemplate501.app"
                BlueprintName = "projectTemplate501"
                ReferencedContainer = "container:projectTemplate501.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7F55BE6EF9A59563C4B2B355"
-            BuildableName = "projectTemplate45.app"
+            BuildableName = "projectTemplate501.app"
             BlueprintName = "projectTemplate501"
             ReferencedContainer = "container:projectTemplate501.xcodeproj">
          </BuildableReference>
@@ -73,7 +73,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7F55BE6EF9A59563C4B2B355"
-            BuildableName = "projectTemplate45.app"
+            BuildableName = "projectTemplate501.app"
             BlueprintName = "projectTemplate501"
             ReferencedContainer = "container:projectTemplate501.xcodeproj">
          </BuildableReference>
@@ -99,7 +99,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7F55BE6EF9A59563C4B2B355"
-            BuildableName = "projectTemplate45.app"
+            BuildableName = "projectTemplate501.app"
             BlueprintName = "projectTemplate501"
             ReferencedContainer = "container:projectTemplate501.xcodeproj">
          </BuildableReference>
