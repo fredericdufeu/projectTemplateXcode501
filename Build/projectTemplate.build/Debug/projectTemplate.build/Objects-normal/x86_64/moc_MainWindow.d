@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/1_MakingXcodeTemplate/projectTemplateXcode/moc_MainWindow.cpp \
+  /Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/projectTemplateXcode2/moc_MainWindow.cpp \
   MainWindow.hpp \
   /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers/QMainWindow \
   /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers/qmainwindow.h \

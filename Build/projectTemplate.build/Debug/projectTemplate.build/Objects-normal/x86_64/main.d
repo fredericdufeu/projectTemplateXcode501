@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/1_MakingXcodeTemplate/projectTemplateXcode/main.cpp \
+  /Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/projectTemplateXcode2/main.cpp \
   /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers/QApplication \
   /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers/qapplication.h \
   /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -101,4 +101,15 @@ dependencies: \
   PushButton.hpp \
   /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers/QPushButton \
   /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers/qpushbutton.h \
-  /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers/qabstractbutton.h
+  /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers/qabstractbutton.h \
+  TextEdit.hpp \
+  /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers/QTextEdit \
+  /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers/qtextedit.h \
+  /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
+  /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers/qframe.h \
+  /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtGui.framework/Headers/qtextdocument.h \
+  /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtCore.framework/Headers/qurl.h \
+  /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtGui.framework/Headers/qtextoption.h \
+  /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtGui.framework/Headers/qtextcursor.h \
+  /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtGui.framework/Headers/qtextformat.h \
+  /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtGui.framework/Headers/qpen.h

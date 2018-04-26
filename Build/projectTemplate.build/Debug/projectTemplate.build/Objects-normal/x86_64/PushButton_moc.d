@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/1_MakingXcodeTemplate/projectTemplateXcode/Build/projectTemplate.build/Debug/projectTemplate.build/DerivedSources/PushButton_moc.cpp \
-  /Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/1_MakingXcodeTemplate/projectTemplateXcode/Build/projectTemplate.build/Debug/projectTemplate.build/DerivedSources/../../../../../PushButton.hpp \
+  /Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/projectTemplateXcode2/Build/projectTemplate.build/Debug/projectTemplate.build/DerivedSources/PushButton_moc.cpp \
+  /Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/projectTemplateXcode2/Build/projectTemplate.build/Debug/projectTemplate.build/DerivedSources/../../../../../PushButton.hpp \
   /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers/QPushButton \
   /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers/qpushbutton.h \
   /Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
