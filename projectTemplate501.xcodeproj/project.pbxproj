@@ -134,15 +134,6 @@
 			name = MainWindow;
 			sourceTree = "<group>";
 		};
-		100EBFED2091F6AA00BFCFEF /* PushButton */ = {
-			isa = PBXGroup;
-			children = (
-				100EBFEE2091F6C300BFCFEF /* PushButton.cpp */,
-				100EBFEF2091F6C300BFCFEF /* PushButton.hpp */,
-			);
-			name = PushButton;
-			sourceTree = "<group>";
-		};
 		105CBF4320923A0C0084B3FF /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,13 +160,22 @@
 			path = LibSndFile;
 			sourceTree = "<group>";
 		};
-		10A01C8920923BCE0041C1CF /* TextEditButton */ = {
+		106C96292092480D0036F5B5 /* PushButton */ = {
+			isa = PBXGroup;
+			children = (
+				100EBFEE2091F6C300BFCFEF /* PushButton.cpp */,
+				100EBFEF2091F6C300BFCFEF /* PushButton.hpp */,
+			);
+			path = PushButton;
+			sourceTree = "<group>";
+		};
+		106C962A209248200036F5B5 /* TextEditButton */ = {
 			isa = PBXGroup;
 			children = (
 				105DD39D20923C3C004E80C2 /* TextEditButton.cpp */,
 				105DD39E20923C3C004E80C2 /* TextEditButton.hpp */,
 			);
-			name = TextEditButton;
+			path = TextEditButton;
 			sourceTree = "<group>";
 		};
 		25B08E2869634E9BCBA333A2 /* Generated Sources */ = {
@@ -189,10 +189,10 @@
 		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				106C962A209248200036F5B5 /* TextEditButton */,
+				106C96292092480D0036F5B5 /* PushButton */,
 				CA8F8D3115263315B6EDE737 /* main.cpp */,
 				100EBFEC2091F69200BFCFEF /* MainWindow */,
-				100EBFED2091F6AA00BFCFEF /* PushButton */,
-				10A01C8920923BCE0041C1CF /* TextEditButton */,
 			);
 			name = Sources;
 			path = ..;
