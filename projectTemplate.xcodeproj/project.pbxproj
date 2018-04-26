@@ -5,673 +5,1876 @@
 	};
 	objectVersion = 46;
 	objects = {
-
-/* Begin PBXAggregateTarget section */
-		6290F9F4B0CCF29541DCFB47 /* Qt Preprocess */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "projectTemplate" */;
-			buildPhases = (
-				5E618435888B9D49F8540165 /* Qt Qmake */,
-				7EF0942E79C014DCEC8976BC /* Qt Preprocessors */,
-			);
-			dependencies = (
-			);
-			name = "Qt Preprocess";
-			productName = "Qt Preprocess";
+		5E618435888B9D49F8540165 = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			isa = PBXShellScriptBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Qt Qmake";
+			shellPath = "/bin/sh";
+			shellScript = "make -C /Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/projectTemplateXcode2/projectTemplate.xcodeproj -f ../qt_makeqmake.mak";
+			showEnvVarsInLog = "0";
 		};
-/* End PBXAggregateTarget section */
-
-/* Begin PBXBuildFile section */
-		100EBFF02091F6C300BFCFEF /* PushButton.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 100EBFEE2091F6C300BFCFEF /* PushButton.cpp */; };
-		100EBFF12091F8A600BFCFEF /* PushButton.hpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 100EBFEF2091F6C300BFCFEF /* PushButton.hpp */; };
-		105CBF3E2092387F0084B3FF /* dummy.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5E9CD4D1FE5969E394D0B5B3 /* dummy.cpp */; };
-		105CBF40209239C40084B3FF /* libsndfile.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 105CBF3F209239C40084B3FF /* libsndfile.a */; };
-		105CBF42209239F70084B3FF /* libportaudio.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 105CBF41209239F70084B3FF /* libportaudio.a */; };
-		105DD39F20923C3C004E80C2 /* TextEdit.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 105DD39D20923C3C004E80C2 /* TextEdit.cpp */; };
-		105DD3A020923CA2004E80C2 /* TextEdit.hpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 105DD39E20923C3C004E80C2 /* TextEdit.hpp */; };
-		33B99A0E19B259F120678B7C /* QtCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A276135214031EC866DC47DF /* QtCore.framework */; };
-		57C2655F445FCF94CA12E45A /* QtGui.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = BFC4FAE7BD427160C6DA4607 /* QtGui.framework */; };
-		8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D4B32C2222F82AC56BADEB21 /* OpenGL.framework */; };
-		8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A1A67BEAA744704B29168D39 /* IOKit.framework */; };
-		8EC4A3F260064EF4A062EA0F /* MainWindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 95B82C14B1D3D95A2BBD8972 /* MainWindow.cpp */; settings = {ATTRIBUTES = (); }; };
-		A2C703BB415706F6735302F6 /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = CA8F8D3115263315B6EDE737 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
-		A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */; };
-		ABA692EC7D08616105FA9500 /* moc_MainWindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = BB6C952D41876871B6A53E05 /* moc_MainWindow.cpp */; settings = {ATTRIBUTES = (); }; };
-		C95B2D280AC930479E49CD66 /* QtWidgets.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 60D12DD5AF98EB30B3EBD182 /* QtWidgets.framework */; };
-		E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXBuildRule section */
-		100EBFF22091F8B300BFCFEF /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			filePatterns = "*.hpp";
-			fileType = pattern.proxy;
-			isEditable = 1;
-			outputFiles = (
-				"$(DERIVED_FILE_DIR)/${INPUT_FILE_BASE}_moc.cpp",
-			);
-			script = "${QT_CLANG64_PATH}/bin/moc ${INPUT_FILE_PATH} -o ${DERIVED_FILE_DIR}/${INPUT_FILE_BASE}_moc.cpp";
+		86B75C435DA9493EA83F856B = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/projectTemplateXcode2/projectTemplate.xcodeproj/main.cpp";
+			name = "main.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
 		};
-/* End PBXBuildRule section */
-
-/* Begin PBXContainerItemProxy section */
-		100EBFEB2091F68200BFCFEF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6290F9F4B0CCF29541DCFB47;
-			remoteInfo = "Qt Preprocess";
+		A1F80817B9DD9D18A3F8E295 = {
+			fileRef = "86B75C435DA9493EA83F856B";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
 		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		99542592E9780B9225F24AA8 /* Embed Frameworks */ = {
+		23600A655DB573AB6DBAF973 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/projectTemplateXcode2/projectTemplate.xcodeproj/MainWindow.cpp";
+			name = "MainWindow.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		8BDA116E617EC289AFF40C25 = {
+			fileRef = "23600A655DB573AB6DBAF973";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		CDAF51BE039B83B0D5241A54 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/projectTemplateXcode2/projectTemplate.xcodeproj/moc_MainWindow.cpp";
+			name = "moc_MainWindow.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		97199B752CF9DD62DCF7E418 = {
+			fileRef = "CDAF51BE039B83B0D5241A54";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		90D0DBF88EFEAE24F63A46B9 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/projectTemplateXcode2/projectTemplate.xcodeproj/MainWindow.hpp";
+			name = "MainWindow.hpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		7A1BE22F21DC2FAD9BE2FC3C = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/data/dummy.cpp";
+			name = "dummy.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		ABF195900BE76542913AD2D1 = {
+			fileRef = "7A1BE22F21DC2FAD9BE2FC3C";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		C6B110B5FE4145CAF824CA27 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/projectTemplateXcode2/projectTemplate.xcodeproj/projectTemplate.pro";
+			name = "projectTemplate.pro";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "text";
+		};
+		A3E601A5652A1C3E40BFF904 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/spec_pre.prf";
+			name = "spec_pre.prf";
+			sourceTree = "<absolute>";
+		};
+		9DCBEF05C71C4B3D5006AB3E = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/qdevice.pri";
+			name = "qdevice.pri";
+			sourceTree = "<absolute>";
+		};
+		A6CE7DDA544538A974EF816B = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/device_config.prf";
+			name = "device_config.prf";
+			sourceTree = "<absolute>";
+		};
+		69BAE6B4D1D8C22CE06FF76B = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/common/unix.conf";
+			name = "unix.conf";
+			sourceTree = "<absolute>";
+		};
+		B7DA677A3EC0D7E07CC60632 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/common/mac.conf";
+			name = "mac.conf";
+			sourceTree = "<absolute>";
+		};
+		E012295220BAE493A5B39FBD = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/common/macx.conf";
+			name = "macx.conf";
+			sourceTree = "<absolute>";
+		};
+		D659C35616D72DC197686547 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/common/sanitize.conf";
+			name = "sanitize.conf";
+			sourceTree = "<absolute>";
+		};
+		2A18AC213750A328AAFC576F = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/common/gcc-base.conf";
+			name = "gcc-base.conf";
+			sourceTree = "<absolute>";
+		};
+		5BE88FCB0273ED807F080583 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/common/gcc-base-mac.conf";
+			name = "gcc-base-mac.conf";
+			sourceTree = "<absolute>";
+		};
+		C8AE386CEFA133E5270238B2 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/common/clang.conf";
+			name = "clang.conf";
+			sourceTree = "<absolute>";
+		};
+		87850BA081F8BDDF34BF1323 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/common/clang-mac.conf";
+			name = "clang-mac.conf";
+			sourceTree = "<absolute>";
+		};
+		578F514AC9714734FD39DDE3 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/qconfig.pri";
+			name = "qconfig.pri";
+			sourceTree = "<absolute>";
+		};
+		24D04987EC47BDEDFF32A12D = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3danimation.pri";
+			name = "qt_lib_3danimation.pri";
+			sourceTree = "<absolute>";
+		};
+		91C68AD8E6382483F188361E = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3danimation_private.pri";
+			name = "qt_lib_3danimation_private.pri";
+			sourceTree = "<absolute>";
+		};
+		3308D66E8456A3F73F17F1CB = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dcore.pri";
+			name = "qt_lib_3dcore.pri";
+			sourceTree = "<absolute>";
+		};
+		69DF857EFFD31AB4E9EC8587 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dcore_private.pri";
+			name = "qt_lib_3dcore_private.pri";
+			sourceTree = "<absolute>";
+		};
+		72FF40E0F38492CEDFAF9652 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dextras.pri";
+			name = "qt_lib_3dextras.pri";
+			sourceTree = "<absolute>";
+		};
+		1419BC301C1BB3622C1E0760 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dextras_private.pri";
+			name = "qt_lib_3dextras_private.pri";
+			sourceTree = "<absolute>";
+		};
+		3E481808567A80AB797F4602 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dinput.pri";
+			name = "qt_lib_3dinput.pri";
+			sourceTree = "<absolute>";
+		};
+		8D193018AE381E26863A958C = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dinput_private.pri";
+			name = "qt_lib_3dinput_private.pri";
+			sourceTree = "<absolute>";
+		};
+		49A4F95FCCFF99184EA52ABD = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dlogic.pri";
+			name = "qt_lib_3dlogic.pri";
+			sourceTree = "<absolute>";
+		};
+		BE64BFCE730981F387C9F16D = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dlogic_private.pri";
+			name = "qt_lib_3dlogic_private.pri";
+			sourceTree = "<absolute>";
+		};
+		F9E3EE0E326185F2E6D4D365 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dquick.pri";
+			name = "qt_lib_3dquick.pri";
+			sourceTree = "<absolute>";
+		};
+		E3CC784BFFD402B66827C87B = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dquick_private.pri";
+			name = "qt_lib_3dquick_private.pri";
+			sourceTree = "<absolute>";
+		};
+		45BA5C1FC3CBBD5CA065B21F = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dquickanimation.pri";
+			name = "qt_lib_3dquickanimation.pri";
+			sourceTree = "<absolute>";
+		};
+		9F5049F332964673A46A0B53 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri";
+			name = "qt_lib_3dquickanimation_private.pri";
+			sourceTree = "<absolute>";
+		};
+		508C19B3D42765CCB58CC396 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dquickextras.pri";
+			name = "qt_lib_3dquickextras.pri";
+			sourceTree = "<absolute>";
+		};
+		C51F2CB9FCA4059A2161267E = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dquickextras_private.pri";
+			name = "qt_lib_3dquickextras_private.pri";
+			sourceTree = "<absolute>";
+		};
+		023E488C5333643C719F1D80 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dquickinput.pri";
+			name = "qt_lib_3dquickinput.pri";
+			sourceTree = "<absolute>";
+		};
+		D5E04E51B754DEC3AADE28BD = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dquickinput_private.pri";
+			name = "qt_lib_3dquickinput_private.pri";
+			sourceTree = "<absolute>";
+		};
+		53EDA7C8BBA3B0BF93DE5908 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dquickrender.pri";
+			name = "qt_lib_3dquickrender.pri";
+			sourceTree = "<absolute>";
+		};
+		618B73996C43867751786643 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dquickrender_private.pri";
+			name = "qt_lib_3dquickrender_private.pri";
+			sourceTree = "<absolute>";
+		};
+		F0007CEEF825474432E8FC1D = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dquickscene2d.pri";
+			name = "qt_lib_3dquickscene2d.pri";
+			sourceTree = "<absolute>";
+		};
+		93EC53FC81C7AEAA374D2EF7 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri";
+			name = "qt_lib_3dquickscene2d_private.pri";
+			sourceTree = "<absolute>";
+		};
+		C1EF3FB4405E33EFEA744A56 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3drender.pri";
+			name = "qt_lib_3drender.pri";
+			sourceTree = "<absolute>";
+		};
+		E0180F1D3E7B5059D8055FB2 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_3drender_private.pri";
+			name = "qt_lib_3drender_private.pri";
+			sourceTree = "<absolute>";
+		};
+		A5FF29525E658247E2DF015E = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_accessibility_support_private.pri";
+			name = "qt_lib_accessibility_support_private.pri";
+			sourceTree = "<absolute>";
+		};
+		195160836574539E864EC1D5 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_bluetooth.pri";
+			name = "qt_lib_bluetooth.pri";
+			sourceTree = "<absolute>";
+		};
+		7938B7A4A0DB4D2A39A8F753 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_bluetooth_private.pri";
+			name = "qt_lib_bluetooth_private.pri";
+			sourceTree = "<absolute>";
+		};
+		E440D334402FF8D0B860DD14 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_bootstrap_private.pri";
+			name = "qt_lib_bootstrap_private.pri";
+			sourceTree = "<absolute>";
+		};
+		94C83307BA698B588D704C1A = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_charts.pri";
+			name = "qt_lib_charts.pri";
+			sourceTree = "<absolute>";
+		};
+		705421273E2831E5CE51E261 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_charts_private.pri";
+			name = "qt_lib_charts_private.pri";
+			sourceTree = "<absolute>";
+		};
+		CC88A38F3CEDE807B87BC43D = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_clipboard_support_private.pri";
+			name = "qt_lib_clipboard_support_private.pri";
+			sourceTree = "<absolute>";
+		};
+		1B75A5A97DDA3CF6B973F8ED = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_concurrent.pri";
+			name = "qt_lib_concurrent.pri";
+			sourceTree = "<absolute>";
+		};
+		ADE2732F4E9797ED01BEEB3B = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_concurrent_private.pri";
+			name = "qt_lib_concurrent_private.pri";
+			sourceTree = "<absolute>";
+		};
+		977E571DFD2D80A108971CA0 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_core.pri";
+			name = "qt_lib_core.pri";
+			sourceTree = "<absolute>";
+		};
+		DCDDF1E34E4BEA4DFDB96A46 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_core_private.pri";
+			name = "qt_lib_core_private.pri";
+			sourceTree = "<absolute>";
+		};
+		405DC1525D211CD9A7CCAE85 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_datavisualization.pri";
+			name = "qt_lib_datavisualization.pri";
+			sourceTree = "<absolute>";
+		};
+		804C2342C9BB78F5B42AD2A2 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_datavisualization_private.pri";
+			name = "qt_lib_datavisualization_private.pri";
+			sourceTree = "<absolute>";
+		};
+		CC892D66C1866F3996CEFD2E = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_dbus.pri";
+			name = "qt_lib_dbus.pri";
+			sourceTree = "<absolute>";
+		};
+		D7059E9AE391DF743815B244 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_dbus_private.pri";
+			name = "qt_lib_dbus_private.pri";
+			sourceTree = "<absolute>";
+		};
+		1A0DC1818430CC3DF0977FCF = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_designer.pri";
+			name = "qt_lib_designer.pri";
+			sourceTree = "<absolute>";
+		};
+		73E6BE141BCAFEF37644FA09 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_designer_private.pri";
+			name = "qt_lib_designer_private.pri";
+			sourceTree = "<absolute>";
+		};
+		06A10625E5ADBAAEE0E8DF68 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_designercomponents_private.pri";
+			name = "qt_lib_designercomponents_private.pri";
+			sourceTree = "<absolute>";
+		};
+		DE7B8D6ACF6274BD5D84CE3F = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri";
+			name = "qt_lib_devicediscovery_support_private.pri";
+			sourceTree = "<absolute>";
+		};
+		FF5CC222810681336274F4D3 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_edid_support_private.pri";
+			name = "qt_lib_edid_support_private.pri";
+			sourceTree = "<absolute>";
+		};
+		2CCF08D03F93AD5F6F2C49D7 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri";
+			name = "qt_lib_eventdispatcher_support_private.pri";
+			sourceTree = "<absolute>";
+		};
+		34F4C42BA8B1EF5DB1E7D790 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_fb_support_private.pri";
+			name = "qt_lib_fb_support_private.pri";
+			sourceTree = "<absolute>";
+		};
+		5E6FBD9618374315A6924952 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri";
+			name = "qt_lib_fontdatabase_support_private.pri";
+			sourceTree = "<absolute>";
+		};
+		94EB74FD853F1289B239AACB = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_gamepad.pri";
+			name = "qt_lib_gamepad.pri";
+			sourceTree = "<absolute>";
+		};
+		E927A98149C7FBB2646CEB06 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_gamepad_private.pri";
+			name = "qt_lib_gamepad_private.pri";
+			sourceTree = "<absolute>";
+		};
+		B82F5005CD72F600D9D56ADB = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_graphics_support_private.pri";
+			name = "qt_lib_graphics_support_private.pri";
+			sourceTree = "<absolute>";
+		};
+		E9708CE1828B49F8F176F8BE = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_gui.pri";
+			name = "qt_lib_gui.pri";
+			sourceTree = "<absolute>";
+		};
+		A87603B8275E573B8B239EB1 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_gui_private.pri";
+			name = "qt_lib_gui_private.pri";
+			sourceTree = "<absolute>";
+		};
+		CFEEB5D94F8C89E5C012152B = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_help.pri";
+			name = "qt_lib_help.pri";
+			sourceTree = "<absolute>";
+		};
+		63D9DC6030C917C9036EFB0B = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_help_private.pri";
+			name = "qt_lib_help_private.pri";
+			sourceTree = "<absolute>";
+		};
+		F592E482D61163BD897729A8 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_location.pri";
+			name = "qt_lib_location.pri";
+			sourceTree = "<absolute>";
+		};
+		A9FA6F520031D6CA00011AD9 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_location_private.pri";
+			name = "qt_lib_location_private.pri";
+			sourceTree = "<absolute>";
+		};
+		12E2AE8FD37AC04EDC2A869D = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_macextras.pri";
+			name = "qt_lib_macextras.pri";
+			sourceTree = "<absolute>";
+		};
+		E77A6328B1AE32B03AEC6839 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_macextras_private.pri";
+			name = "qt_lib_macextras_private.pri";
+			sourceTree = "<absolute>";
+		};
+		71488245496995500FB88091 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_multimedia.pri";
+			name = "qt_lib_multimedia.pri";
+			sourceTree = "<absolute>";
+		};
+		0B18F065044F29B4765D4BD1 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_multimedia_private.pri";
+			name = "qt_lib_multimedia_private.pri";
+			sourceTree = "<absolute>";
+		};
+		B90F5AFCB709DD7F30FAED97 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_multimediawidgets.pri";
+			name = "qt_lib_multimediawidgets.pri";
+			sourceTree = "<absolute>";
+		};
+		AFEEE42C039842EA051F6D52 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri";
+			name = "qt_lib_multimediawidgets_private.pri";
+			sourceTree = "<absolute>";
+		};
+		BE88E9919CE3A6BEE2D5C66A = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_network.pri";
+			name = "qt_lib_network.pri";
+			sourceTree = "<absolute>";
+		};
+		1F237F8443510B6752C654C6 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_network_private.pri";
+			name = "qt_lib_network_private.pri";
+			sourceTree = "<absolute>";
+		};
+		5D189883A89DFE7E6EC02FB1 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_networkauth.pri";
+			name = "qt_lib_networkauth.pri";
+			sourceTree = "<absolute>";
+		};
+		5144CA3F6DB2A57AD13CB188 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_networkauth_private.pri";
+			name = "qt_lib_networkauth_private.pri";
+			sourceTree = "<absolute>";
+		};
+		6C4A79B53015EEE0F142D150 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_nfc.pri";
+			name = "qt_lib_nfc.pri";
+			sourceTree = "<absolute>";
+		};
+		036F85566ADD7D41C69113F6 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_nfc_private.pri";
+			name = "qt_lib_nfc_private.pri";
+			sourceTree = "<absolute>";
+		};
+		29F1450ADD99645AE4D295B0 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_opengl.pri";
+			name = "qt_lib_opengl.pri";
+			sourceTree = "<absolute>";
+		};
+		A37C05095CFD2D2C51092820 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_opengl_private.pri";
+			name = "qt_lib_opengl_private.pri";
+			sourceTree = "<absolute>";
+		};
+		3A12D83104AF97C5B262727F = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_openglextensions.pri";
+			name = "qt_lib_openglextensions.pri";
+			sourceTree = "<absolute>";
+		};
+		6BE4CCAFDE455BBE8252F605 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_openglextensions_private.pri";
+			name = "qt_lib_openglextensions_private.pri";
+			sourceTree = "<absolute>";
+		};
+		66E61ACB3588C290ED6BE5C6 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_packetprotocol_private.pri";
+			name = "qt_lib_packetprotocol_private.pri";
+			sourceTree = "<absolute>";
+		};
+		4FCE9E8B90A390E43C06308C = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri";
+			name = "qt_lib_platformcompositor_support_private.pri";
+			sourceTree = "<absolute>";
+		};
+		8E0890B9678E4238934FFD2E = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_positioning.pri";
+			name = "qt_lib_positioning.pri";
+			sourceTree = "<absolute>";
+		};
+		BF735D26255018B1E2866719 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_positioning_private.pri";
+			name = "qt_lib_positioning_private.pri";
+			sourceTree = "<absolute>";
+		};
+		75C99849B12631592588210A = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_printsupport.pri";
+			name = "qt_lib_printsupport.pri";
+			sourceTree = "<absolute>";
+		};
+		45E5C2D9534A6767D9709CA2 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_printsupport_private.pri";
+			name = "qt_lib_printsupport_private.pri";
+			sourceTree = "<absolute>";
+		};
+		10C9F463D859A6787EDE22F9 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_purchasing.pri";
+			name = "qt_lib_purchasing.pri";
+			sourceTree = "<absolute>";
+		};
+		9620EC1CDD1718423014DAED = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_purchasing_private.pri";
+			name = "qt_lib_purchasing_private.pri";
+			sourceTree = "<absolute>";
+		};
+		2AC7A2B8E7913C854E329651 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_qml.pri";
+			name = "qt_lib_qml.pri";
+			sourceTree = "<absolute>";
+		};
+		DF50752D4C0F20B06CE98C9E = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_qml_private.pri";
+			name = "qt_lib_qml_private.pri";
+			sourceTree = "<absolute>";
+		};
+		7C84C27D4201A43C9C6F41D3 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_qmldebug_private.pri";
+			name = "qt_lib_qmldebug_private.pri";
+			sourceTree = "<absolute>";
+		};
+		0027CFF0456E5F88620DABB6 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_qmldevtools_private.pri";
+			name = "qt_lib_qmldevtools_private.pri";
+			sourceTree = "<absolute>";
+		};
+		813591BCEF700E23DBA6FD5F = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_qmltest.pri";
+			name = "qt_lib_qmltest.pri";
+			sourceTree = "<absolute>";
+		};
+		969D93BE389B98BC58A99EBB = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_qmltest_private.pri";
+			name = "qt_lib_qmltest_private.pri";
+			sourceTree = "<absolute>";
+		};
+		01EEA6D342F2861E17EF8E9C = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri";
+			name = "qt_lib_qtmultimediaquicktools_private.pri";
+			sourceTree = "<absolute>";
+		};
+		858FB22F49B6C596C2088D10 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_quick.pri";
+			name = "qt_lib_quick.pri";
+			sourceTree = "<absolute>";
+		};
+		F05B28DFC37875F27CB401A6 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_quick_private.pri";
+			name = "qt_lib_quick_private.pri";
+			sourceTree = "<absolute>";
+		};
+		1D0A75C5040B14787E5872AC = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_quickcontrols2.pri";
+			name = "qt_lib_quickcontrols2.pri";
+			sourceTree = "<absolute>";
+		};
+		2C3878615EC37E0DE4B9F3D0 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri";
+			name = "qt_lib_quickcontrols2_private.pri";
+			sourceTree = "<absolute>";
+		};
+		BE9C9781719BD703C7D377D6 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_quickparticles_private.pri";
+			name = "qt_lib_quickparticles_private.pri";
+			sourceTree = "<absolute>";
+		};
+		FB1DB2ACF339C79DA90A41F1 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri";
+			name = "qt_lib_quicktemplates2_private.pri";
+			sourceTree = "<absolute>";
+		};
+		1A7533D0C169ACEF21F0BC2F = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_quickwidgets.pri";
+			name = "qt_lib_quickwidgets.pri";
+			sourceTree = "<absolute>";
+		};
+		9781979CCCB7C2D37CF2000B = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_quickwidgets_private.pri";
+			name = "qt_lib_quickwidgets_private.pri";
+			sourceTree = "<absolute>";
+		};
+		AADFEA24D76C806D882BFF30 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_remoteobjects.pri";
+			name = "qt_lib_remoteobjects.pri";
+			sourceTree = "<absolute>";
+		};
+		C82259AF82A492ADC1CE07C1 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_remoteobjects_private.pri";
+			name = "qt_lib_remoteobjects_private.pri";
+			sourceTree = "<absolute>";
+		};
+		409A787CD2CA6E5128A2BA49 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_repparser.pri";
+			name = "qt_lib_repparser.pri";
+			sourceTree = "<absolute>";
+		};
+		4EB3EF38D23AD2C4F0C465E3 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_repparser_private.pri";
+			name = "qt_lib_repparser_private.pri";
+			sourceTree = "<absolute>";
+		};
+		1DA4F657935E468594A3B3A1 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_script.pri";
+			name = "qt_lib_script.pri";
+			sourceTree = "<absolute>";
+		};
+		ABBC311080B0B86C3EAC5F58 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_script_private.pri";
+			name = "qt_lib_script_private.pri";
+			sourceTree = "<absolute>";
+		};
+		36D3DA70E2F2F3D7552F710D = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_scripttools.pri";
+			name = "qt_lib_scripttools.pri";
+			sourceTree = "<absolute>";
+		};
+		F9AAA705BAD8E15C4EEB833B = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_scripttools_private.pri";
+			name = "qt_lib_scripttools_private.pri";
+			sourceTree = "<absolute>";
+		};
+		51B7D70BA1FAC862F408A3BA = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_scxml.pri";
+			name = "qt_lib_scxml.pri";
+			sourceTree = "<absolute>";
+		};
+		3B85E9A5C7486FF8AF4632B2 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_scxml_private.pri";
+			name = "qt_lib_scxml_private.pri";
+			sourceTree = "<absolute>";
+		};
+		C2A32BE3BED6A98032A3AE75 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_sensors.pri";
+			name = "qt_lib_sensors.pri";
+			sourceTree = "<absolute>";
+		};
+		6C24ED7ED804B0A1302A649F = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_sensors_private.pri";
+			name = "qt_lib_sensors_private.pri";
+			sourceTree = "<absolute>";
+		};
+		EB2B5794721107F1E81E8C3D = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_serialbus.pri";
+			name = "qt_lib_serialbus.pri";
+			sourceTree = "<absolute>";
+		};
+		72D8E77E5D879D28853CC654 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_serialbus_private.pri";
+			name = "qt_lib_serialbus_private.pri";
+			sourceTree = "<absolute>";
+		};
+		263F3775A991FD47D8D52444 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_serialport.pri";
+			name = "qt_lib_serialport.pri";
+			sourceTree = "<absolute>";
+		};
+		E141E1A3944F580E59875647 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_serialport_private.pri";
+			name = "qt_lib_serialport_private.pri";
+			sourceTree = "<absolute>";
+		};
+		D502EF554FD171232872613C = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_sql.pri";
+			name = "qt_lib_sql.pri";
+			sourceTree = "<absolute>";
+		};
+		3AD2E700E10FDFF5054BD52E = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_sql_private.pri";
+			name = "qt_lib_sql_private.pri";
+			sourceTree = "<absolute>";
+		};
+		C6342A390F09C5E3A3F6A29F = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_svg.pri";
+			name = "qt_lib_svg.pri";
+			sourceTree = "<absolute>";
+		};
+		F552416FACD2FC1187EF2AB9 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_svg_private.pri";
+			name = "qt_lib_svg_private.pri";
+			sourceTree = "<absolute>";
+		};
+		1E7AE3FF14BCA9B6840B93CA = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_testlib.pri";
+			name = "qt_lib_testlib.pri";
+			sourceTree = "<absolute>";
+		};
+		2612782F68CB737DD188B975 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_testlib_private.pri";
+			name = "qt_lib_testlib_private.pri";
+			sourceTree = "<absolute>";
+		};
+		3C71E3E2839A8341F98FE411 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_texttospeech.pri";
+			name = "qt_lib_texttospeech.pri";
+			sourceTree = "<absolute>";
+		};
+		919D98A9A6A4C762AE8A0901 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_texttospeech_private.pri";
+			name = "qt_lib_texttospeech_private.pri";
+			sourceTree = "<absolute>";
+		};
+		37648A809F93C7007747F171 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_theme_support_private.pri";
+			name = "qt_lib_theme_support_private.pri";
+			sourceTree = "<absolute>";
+		};
+		DA4D0511EA760C858C6A63C8 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_uiplugin.pri";
+			name = "qt_lib_uiplugin.pri";
+			sourceTree = "<absolute>";
+		};
+		9EF64D436ECB91BF049265F5 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_uitools.pri";
+			name = "qt_lib_uitools.pri";
+			sourceTree = "<absolute>";
+		};
+		6A7D5406A532C9A7B5C07542 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_uitools_private.pri";
+			name = "qt_lib_uitools_private.pri";
+			sourceTree = "<absolute>";
+		};
+		DE29925408677D1FAECF78B0 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_webchannel.pri";
+			name = "qt_lib_webchannel.pri";
+			sourceTree = "<absolute>";
+		};
+		18DAA36910529D11818B1AC7 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_webchannel_private.pri";
+			name = "qt_lib_webchannel_private.pri";
+			sourceTree = "<absolute>";
+		};
+		826A95773BF978EB5F5265EB = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_webengine.pri";
+			name = "qt_lib_webengine.pri";
+			sourceTree = "<absolute>";
+		};
+		FE13A15FEDE59358773CD369 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_webengine_private.pri";
+			name = "qt_lib_webengine_private.pri";
+			sourceTree = "<absolute>";
+		};
+		17B0208073CDE38687B30453 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_webenginecore.pri";
+			name = "qt_lib_webenginecore.pri";
+			sourceTree = "<absolute>";
+		};
+		3B95086A6E9571A9E6A114EE = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_webenginecore_private.pri";
+			name = "qt_lib_webenginecore_private.pri";
+			sourceTree = "<absolute>";
+		};
+		0200D65245A364224E80FBD1 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri";
+			name = "qt_lib_webenginecoreheaders_private.pri";
+			sourceTree = "<absolute>";
+		};
+		E68033C88737F48D3D9D7B41 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_webenginewidgets.pri";
+			name = "qt_lib_webenginewidgets.pri";
+			sourceTree = "<absolute>";
+		};
+		657610C923DFA7D1CBFA3B64 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri";
+			name = "qt_lib_webenginewidgets_private.pri";
+			sourceTree = "<absolute>";
+		};
+		0E6DF127A23E195A37F9E399 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_websockets.pri";
+			name = "qt_lib_websockets.pri";
+			sourceTree = "<absolute>";
+		};
+		923FF25CAC18B9E44E6B7789 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_websockets_private.pri";
+			name = "qt_lib_websockets_private.pri";
+			sourceTree = "<absolute>";
+		};
+		FBFE21392CC08E30587B80DC = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_webview.pri";
+			name = "qt_lib_webview.pri";
+			sourceTree = "<absolute>";
+		};
+		B40F8C8D3CF46540D18EB88B = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_webview_private.pri";
+			name = "qt_lib_webview_private.pri";
+			sourceTree = "<absolute>";
+		};
+		6B78EFDB982E0E6146671EA1 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_widgets.pri";
+			name = "qt_lib_widgets.pri";
+			sourceTree = "<absolute>";
+		};
+		DA49FDF402E87D2ABFA4B60D = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_widgets_private.pri";
+			name = "qt_lib_widgets_private.pri";
+			sourceTree = "<absolute>";
+		};
+		3FD7DA69DF869FA74E906982 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_xml.pri";
+			name = "qt_lib_xml.pri";
+			sourceTree = "<absolute>";
+		};
+		D84AF55E8ABE9FBAD7FFD60B = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_xml_private.pri";
+			name = "qt_lib_xml_private.pri";
+			sourceTree = "<absolute>";
+		};
+		EF70C06855588FC2F07BB4B7 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_xmlpatterns.pri";
+			name = "qt_lib_xmlpatterns.pri";
+			sourceTree = "<absolute>";
+		};
+		C8F9331486BA5DCC653C6E92 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri";
+			name = "qt_lib_xmlpatterns_private.pri";
+			sourceTree = "<absolute>";
+		};
+		4A695673314CB9F0CC521383 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/qt_functions.prf";
+			name = "qt_functions.prf";
+			sourceTree = "<absolute>";
+		};
+		ECED6F0729EA53DB565A5DC9 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/qt_config.prf";
+			name = "qt_config.prf";
+			sourceTree = "<absolute>";
+		};
+		1C4E1B9A56F18DA93FB5B1D7 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/macx-clang/qmake.conf";
+			name = "qmake.conf";
+			sourceTree = "<absolute>";
+		};
+		109F41F9BE6C3110A85CC2BF = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/macx-xcode/qmake.conf";
+			name = "qmake.conf";
+			sourceTree = "<absolute>";
+		};
+		A28F645A6F69C56019B8ED63 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/spec_post.prf";
+			name = "spec_post.prf";
+			sourceTree = "<absolute>";
+		};
+		48456AE715885666E54E38E5 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/.qmake.stash";
+			name = ".qmake.stash";
+			sourceTree = "<absolute>";
+		};
+		59468E8A64453A19816A6382 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/exclusive_builds.prf";
+			name = "exclusive_builds.prf";
+			sourceTree = "<absolute>";
+		};
+		A07874D1D615DCDDF8DB88E7 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/mac/sdk.prf";
+			name = "sdk.prf";
+			sourceTree = "<absolute>";
+		};
+		BE2F805672FB822DA33B4E43 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/toolchain.prf";
+			name = "toolchain.prf";
+			sourceTree = "<absolute>";
+		};
+		2453F0A6E74C761B6D456DEB = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/mac/toolchain.prf";
+			name = "toolchain.prf";
+			sourceTree = "<absolute>";
+		};
+		A9AED47D1DA801235B91895B = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/default_pre.prf";
+			name = "default_pre.prf";
+			sourceTree = "<absolute>";
+		};
+		DDFDF74CA3ABD2FC37A10A2E = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/mac/default_pre.prf";
+			name = "default_pre.prf";
+			sourceTree = "<absolute>";
+		};
+		202679BDE7E7E5CEB72AE8ED = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/resolve_config.prf";
+			name = "resolve_config.prf";
+			sourceTree = "<absolute>";
+		};
+		EB379510D024CEF4CA3E60F0 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/default_post.prf";
+			name = "default_post.prf";
+			sourceTree = "<absolute>";
+		};
+		B08240B08FD0FD1640C87082 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/mac/default_post.prf";
+			name = "default_post.prf";
+			sourceTree = "<absolute>";
+		};
+		3333B6485F379C8439A23FAF = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/mac/objective_c.prf";
+			name = "objective_c.prf";
+			sourceTree = "<absolute>";
+		};
+		0A8807A88DE56A727D3C9767 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/mac/mac.prf";
+			name = "mac.prf";
+			sourceTree = "<absolute>";
+		};
+		78EF195A6B99A8F8998217EE = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/warn_on.prf";
+			name = "warn_on.prf";
+			sourceTree = "<absolute>";
+		};
+		7E2CB25ACC3BC29DC3D821AF = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/qt.prf";
+			name = "qt.prf";
+			sourceTree = "<absolute>";
+		};
+		0486D375923F733774A0BBF8 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/resources.prf";
+			name = "resources.prf";
+			sourceTree = "<absolute>";
+		};
+		CD595210AA9B81E510C551EA = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/moc.prf";
+			name = "moc.prf";
+			sourceTree = "<absolute>";
+		};
+		957F380228788931E2124270 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/unix/opengl.prf";
+			name = "opengl.prf";
+			sourceTree = "<absolute>";
+		};
+		D2284D645ADBBE1606D7FADF = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/uic.prf";
+			name = "uic.prf";
+			sourceTree = "<absolute>";
+		};
+		2E7B30B0E1AA571B436AE318 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/unix/thread.prf";
+			name = "thread.prf";
+			sourceTree = "<absolute>";
+		};
+		4C0D9B26FD72BA806B0D4C4A = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/qmake_use.prf";
+			name = "qmake_use.prf";
+			sourceTree = "<absolute>";
+		};
+		926F8C3FC979FE514090E0E2 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/file_copies.prf";
+			name = "file_copies.prf";
+			sourceTree = "<absolute>";
+		};
+		5AC61F16975C41D54BF5706F = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/mac/rez.prf";
+			name = "rez.prf";
+			sourceTree = "<absolute>";
+		};
+		9AC8D7CC6026735E388C0369 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/mac/asset_catalogs.prf";
+			name = "asset_catalogs.prf";
+			sourceTree = "<absolute>";
+		};
+		DD928D953164A03E71A31843 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/testcase_targets.prf";
+			name = "testcase_targets.prf";
+			sourceTree = "<absolute>";
+		};
+		2714256FAC40C8D1A7C66AC3 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/exceptions.prf";
+			name = "exceptions.prf";
+			sourceTree = "<absolute>";
+		};
+		589E1267947412C3C92D0152 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/yacc.prf";
+			name = "yacc.prf";
+			sourceTree = "<absolute>";
+		};
+		4BE6EC59815BE950D1323376 = {
+			isa = PBXFileReference;
+			path = "/Users/fredericdufeu/Desktop/Qt/5.10.1/clang_64/mkspecs/features/lex.prf";
+			name = "lex.prf";
+			sourceTree = "<absolute>";
+		};
+		25B08E2869634E9BCBA333A2 = {
+			isa = PBXGroup;
+			children = (
+				"DB98A905E0AD1A5834531960");
+			name = "Generated Sources";
+			sourceTree = "<group>";
+		};
+		DB98A905E0AD1A5834531960 = {
+			isa = PBXGroup;
+			children = (
+				"CDAF51BE039B83B0D5241A54");
+			name = "projectTemplate.xcodeproj";
+			sourceTree = "<group>";
+		};
+		56B28C434C633DAA6D6072A9 = {
+			isa = PBXGroup;
+			children = (
+				"86B75C435DA9493EA83F856B",
+				"23600A655DB573AB6DBAF973",
+				"90D0DBF88EFEAE24F63A46B9");
+			name = "projectTemplate.xcodeproj";
+			sourceTree = "<group>";
+		};
+		EA646FCD4685F906A673AB32 = {
+			isa = PBXGroup;
+			children = (
+				"C6B110B5FE4145CAF824CA27");
+			name = "projectTemplate.xcodeproj";
+			sourceTree = "<group>";
+		};
+		2EB56BE3C2D93CDAB0C52E67 = {
+			isa = PBXGroup;
+			children = (
+				"56B28C434C633DAA6D6072A9");
+			name = "Sources";
+			sourceTree = "<group>";
+		};
+		B8254625CFD509ED2A24A166 = {
+			isa = PBXGroup;
+			children = (
+				"7A1BE22F21DC2FAD9BE2FC3C");
+			name = "Sources [moc_predefs]";
+			sourceTree = "<group>";
+		};
+		74B182DB50CB5611B5C1C297 = {
+			isa = PBXGroup;
+			children = (
+				"EA646FCD4685F906A673AB32",
+				"A3E601A5652A1C3E40BFF904",
+				"9DCBEF05C71C4B3D5006AB3E",
+				"A6CE7DDA544538A974EF816B",
+				"69BAE6B4D1D8C22CE06FF76B",
+				"B7DA677A3EC0D7E07CC60632",
+				"E012295220BAE493A5B39FBD",
+				"D659C35616D72DC197686547",
+				"2A18AC213750A328AAFC576F",
+				"5BE88FCB0273ED807F080583",
+				"C8AE386CEFA133E5270238B2",
+				"87850BA081F8BDDF34BF1323",
+				"578F514AC9714734FD39DDE3",
+				"24D04987EC47BDEDFF32A12D",
+				"91C68AD8E6382483F188361E",
+				"3308D66E8456A3F73F17F1CB",
+				"69DF857EFFD31AB4E9EC8587",
+				"72FF40E0F38492CEDFAF9652",
+				"1419BC301C1BB3622C1E0760",
+				"3E481808567A80AB797F4602",
+				"8D193018AE381E26863A958C",
+				"49A4F95FCCFF99184EA52ABD",
+				"BE64BFCE730981F387C9F16D",
+				"F9E3EE0E326185F2E6D4D365",
+				"E3CC784BFFD402B66827C87B",
+				"45BA5C1FC3CBBD5CA065B21F",
+				"9F5049F332964673A46A0B53",
+				"508C19B3D42765CCB58CC396",
+				"C51F2CB9FCA4059A2161267E",
+				"023E488C5333643C719F1D80",
+				"D5E04E51B754DEC3AADE28BD",
+				"53EDA7C8BBA3B0BF93DE5908",
+				"618B73996C43867751786643",
+				"F0007CEEF825474432E8FC1D",
+				"93EC53FC81C7AEAA374D2EF7",
+				"C1EF3FB4405E33EFEA744A56",
+				"E0180F1D3E7B5059D8055FB2",
+				"A5FF29525E658247E2DF015E",
+				"195160836574539E864EC1D5",
+				"7938B7A4A0DB4D2A39A8F753",
+				"E440D334402FF8D0B860DD14",
+				"94C83307BA698B588D704C1A",
+				"705421273E2831E5CE51E261",
+				"CC88A38F3CEDE807B87BC43D",
+				"1B75A5A97DDA3CF6B973F8ED",
+				"ADE2732F4E9797ED01BEEB3B",
+				"977E571DFD2D80A108971CA0",
+				"DCDDF1E34E4BEA4DFDB96A46",
+				"405DC1525D211CD9A7CCAE85",
+				"804C2342C9BB78F5B42AD2A2",
+				"CC892D66C1866F3996CEFD2E",
+				"D7059E9AE391DF743815B244",
+				"1A0DC1818430CC3DF0977FCF",
+				"73E6BE141BCAFEF37644FA09",
+				"06A10625E5ADBAAEE0E8DF68",
+				"DE7B8D6ACF6274BD5D84CE3F",
+				"FF5CC222810681336274F4D3",
+				"2CCF08D03F93AD5F6F2C49D7",
+				"34F4C42BA8B1EF5DB1E7D790",
+				"5E6FBD9618374315A6924952",
+				"94EB74FD853F1289B239AACB",
+				"E927A98149C7FBB2646CEB06",
+				"B82F5005CD72F600D9D56ADB",
+				"E9708CE1828B49F8F176F8BE",
+				"A87603B8275E573B8B239EB1",
+				"CFEEB5D94F8C89E5C012152B",
+				"63D9DC6030C917C9036EFB0B",
+				"F592E482D61163BD897729A8",
+				"A9FA6F520031D6CA00011AD9",
+				"12E2AE8FD37AC04EDC2A869D",
+				"E77A6328B1AE32B03AEC6839",
+				"71488245496995500FB88091",
+				"0B18F065044F29B4765D4BD1",
+				"B90F5AFCB709DD7F30FAED97",
+				"AFEEE42C039842EA051F6D52",
+				"BE88E9919CE3A6BEE2D5C66A",
+				"1F237F8443510B6752C654C6",
+				"5D189883A89DFE7E6EC02FB1",
+				"5144CA3F6DB2A57AD13CB188",
+				"6C4A79B53015EEE0F142D150",
+				"036F85566ADD7D41C69113F6",
+				"29F1450ADD99645AE4D295B0",
+				"A37C05095CFD2D2C51092820",
+				"3A12D83104AF97C5B262727F",
+				"6BE4CCAFDE455BBE8252F605",
+				"66E61ACB3588C290ED6BE5C6",
+				"4FCE9E8B90A390E43C06308C",
+				"8E0890B9678E4238934FFD2E",
+				"BF735D26255018B1E2866719",
+				"75C99849B12631592588210A",
+				"45E5C2D9534A6767D9709CA2",
+				"10C9F463D859A6787EDE22F9",
+				"9620EC1CDD1718423014DAED",
+				"2AC7A2B8E7913C854E329651",
+				"DF50752D4C0F20B06CE98C9E",
+				"7C84C27D4201A43C9C6F41D3",
+				"0027CFF0456E5F88620DABB6",
+				"813591BCEF700E23DBA6FD5F",
+				"969D93BE389B98BC58A99EBB",
+				"01EEA6D342F2861E17EF8E9C",
+				"858FB22F49B6C596C2088D10",
+				"F05B28DFC37875F27CB401A6",
+				"1D0A75C5040B14787E5872AC",
+				"2C3878615EC37E0DE4B9F3D0",
+				"BE9C9781719BD703C7D377D6",
+				"FB1DB2ACF339C79DA90A41F1",
+				"1A7533D0C169ACEF21F0BC2F",
+				"9781979CCCB7C2D37CF2000B",
+				"AADFEA24D76C806D882BFF30",
+				"C82259AF82A492ADC1CE07C1",
+				"409A787CD2CA6E5128A2BA49",
+				"4EB3EF38D23AD2C4F0C465E3",
+				"1DA4F657935E468594A3B3A1",
+				"ABBC311080B0B86C3EAC5F58",
+				"36D3DA70E2F2F3D7552F710D",
+				"F9AAA705BAD8E15C4EEB833B",
+				"51B7D70BA1FAC862F408A3BA",
+				"3B85E9A5C7486FF8AF4632B2",
+				"C2A32BE3BED6A98032A3AE75",
+				"6C24ED7ED804B0A1302A649F",
+				"EB2B5794721107F1E81E8C3D",
+				"72D8E77E5D879D28853CC654",
+				"263F3775A991FD47D8D52444",
+				"E141E1A3944F580E59875647",
+				"D502EF554FD171232872613C",
+				"3AD2E700E10FDFF5054BD52E",
+				"C6342A390F09C5E3A3F6A29F",
+				"F552416FACD2FC1187EF2AB9",
+				"1E7AE3FF14BCA9B6840B93CA",
+				"2612782F68CB737DD188B975",
+				"3C71E3E2839A8341F98FE411",
+				"919D98A9A6A4C762AE8A0901",
+				"37648A809F93C7007747F171",
+				"DA4D0511EA760C858C6A63C8",
+				"9EF64D436ECB91BF049265F5",
+				"6A7D5406A532C9A7B5C07542",
+				"DE29925408677D1FAECF78B0",
+				"18DAA36910529D11818B1AC7",
+				"826A95773BF978EB5F5265EB",
+				"FE13A15FEDE59358773CD369",
+				"17B0208073CDE38687B30453",
+				"3B95086A6E9571A9E6A114EE",
+				"0200D65245A364224E80FBD1",
+				"E68033C88737F48D3D9D7B41",
+				"657610C923DFA7D1CBFA3B64",
+				"0E6DF127A23E195A37F9E399",
+				"923FF25CAC18B9E44E6B7789",
+				"FBFE21392CC08E30587B80DC",
+				"B40F8C8D3CF46540D18EB88B",
+				"6B78EFDB982E0E6146671EA1",
+				"DA49FDF402E87D2ABFA4B60D",
+				"3FD7DA69DF869FA74E906982",
+				"D84AF55E8ABE9FBAD7FFD60B",
+				"EF70C06855588FC2F07BB4B7",
+				"C8F9331486BA5DCC653C6E92",
+				"4A695673314CB9F0CC521383",
+				"ECED6F0729EA53DB565A5DC9",
+				"1C4E1B9A56F18DA93FB5B1D7",
+				"109F41F9BE6C3110A85CC2BF",
+				"A28F645A6F69C56019B8ED63",
+				"48456AE715885666E54E38E5",
+				"59468E8A64453A19816A6382",
+				"A07874D1D615DCDDF8DB88E7",
+				"BE2F805672FB822DA33B4E43",
+				"2453F0A6E74C761B6D456DEB",
+				"A9AED47D1DA801235B91895B",
+				"DDFDF74CA3ABD2FC37A10A2E",
+				"202679BDE7E7E5CEB72AE8ED",
+				"EB379510D024CEF4CA3E60F0",
+				"B08240B08FD0FD1640C87082",
+				"3333B6485F379C8439A23FAF",
+				"0A8807A88DE56A727D3C9767",
+				"78EF195A6B99A8F8998217EE",
+				"7E2CB25ACC3BC29DC3D821AF",
+				"0486D375923F733774A0BBF8",
+				"CD595210AA9B81E510C551EA",
+				"957F380228788931E2124270",
+				"D2284D645ADBBE1606D7FADF",
+				"2E7B30B0E1AA571B436AE318",
+				"4C0D9B26FD72BA806B0D4C4A",
+				"926F8C3FC979FE514090E0E2",
+				"5AC61F16975C41D54BF5706F",
+				"9AC8D7CC6026735E388C0369",
+				"DD928D953164A03E71A31843",
+				"2714256FAC40C8D1A7C66AC3",
+				"589E1267947412C3C92D0152",
+				"4BE6EC59815BE950D1323376");
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EF0942E79C014DCEC8976BC = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			isa = PBXShellScriptBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Qt Preprocessors";
+			shellPath = "/bin/sh";
+			shellScript = "make -C /Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/projectTemplateXcode2/projectTemplate.xcodeproj -f ../qt_preprocess.mak";
+			showEnvVarsInLog = "0";
+		};
+		F7E50F631C51CD5B5DC0BC43 = {
+			buildActionMask = 2147483647;
+			files = (
+				"A1F80817B9DD9D18A3F8E295",
+				"8BDA116E617EC289AFF40C25",
+				"97199B752CF9DD62DCF7E418",
+				"ABF195900BE76542913AD2D1");
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Compile Sources";
+		};
+		60D12DD5AF98EB30B3EBD182 = {
+			isa = PBXFileReference;
+			name = "QtWidgets.framework";
+			path = "/Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		C95B2D280AC930479E49CD66 = {
+			fileRef = "60D12DD5AF98EB30B3EBD182";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFC4FAE7BD427160C6DA4607 = {
+			isa = PBXFileReference;
+			name = "QtGui.framework";
+			path = "/Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtGui.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		57C2655F445FCF94CA12E45A = {
+			fileRef = "BFC4FAE7BD427160C6DA4607";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A276135214031EC866DC47DF = {
+			isa = PBXFileReference;
+			name = "QtCore.framework";
+			path = "/Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtCore.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		33B99A0E19B259F120678B7C = {
+			fileRef = "A276135214031EC866DC47DF";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2B774D8E4178765CE52EAAF5 = {
+			isa = PBXFileReference;
+			name = "DiskArbitration.framework";
+			path = "/System/Library/Frameworks/DiskArbitration.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		A99B2AA0F9CBBDD12BA126A4 = {
+			fileRef = "2B774D8E4178765CE52EAAF5";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A1A67BEAA744704B29168D39 = {
+			isa = PBXFileReference;
+			name = "IOKit.framework";
+			path = "/System/Library/Frameworks/IOKit.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		8D267F2E4776F0ECA2F49DC8 = {
+			fileRef = "A1A67BEAA744704B29168D39";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		D4B32C2222F82AC56BADEB21 = {
+			isa = PBXFileReference;
+			name = "OpenGL.framework";
+			path = "/System/Library/Frameworks/OpenGL.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		8771A8C96E9C391044035D99 = {
+			fileRef = "D4B32C2222F82AC56BADEB21";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8D9815BDB5BD9F90D2BC05C5 = {
+			isa = PBXFileReference;
+			name = "AGL.framework";
+			path = "/System/Library/Frameworks/AGL.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		E45E51A644D5FC9F942ECE55 = {
+			fileRef = "8D9815BDB5BD9F90D2BC05C5";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AF39DD055C3EF8226FBE929D = {
+			children = (
+				"60D12DD5AF98EB30B3EBD182",
+				"BFC4FAE7BD427160C6DA4607",
+				"A276135214031EC866DC47DF",
+				"2B774D8E4178765CE52EAAF5",
+				"A1A67BEAA744704B29168D39",
+				"D4B32C2222F82AC56BADEB21",
+				"8D9815BDB5BD9F90D2BC05C5");
+			isa = PBXGroup;
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		D1C883685E82D5676953459A = {
+			buildActionMask = 2147483647;
+			files = (
+				"C95B2D280AC930479E49CD66",
+				"57C2655F445FCF94CA12E45A",
+				"33B99A0E19B259F120678B7C",
+				"A99B2AA0F9CBBDD12BA126A4",
+				"8D267F2E4776F0ECA2F49DC8",
+				"8771A8C96E9C391044035D99",
+				"E45E51A644D5FC9F942ECE55");
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Link Binary With Libraries";
+		};
+		30414803F31797EB689AE508 = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Copy Bundle Resources";
+		};
+		99542592E9780B9225F24AA8 = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-			);
+				);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		0F458838985948CF19C32861 /* projectTemplate.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = projectTemplate.pro; sourceTree = "<group>"; };
-		100EBFEE2091F6C300BFCFEF /* PushButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PushButton.cpp; sourceTree = "<group>"; };
-		100EBFEF2091F6C300BFCFEF /* PushButton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PushButton.hpp; sourceTree = "<group>"; };
-		105CBF3F209239C40084B3FF /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = libsndfile/1.0.28/lib/libsndfile.a; sourceTree = EXT_FRAMEWORKS_PATH; };
-		105CBF41209239F70084B3FF /* libportaudio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libportaudio.a; path = portaudio/19.6.0/lib/libportaudio.a; sourceTree = EXT_FRAMEWORKS_PATH; };
-		105CBF4620923A6B0084B3FF /* portaudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = portaudio.h; sourceTree = "<group>"; };
-		105CBF4720923A890084B3FF /* sndfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sndfile.h; sourceTree = "<group>"; };
-		105DD39D20923C3C004E80C2 /* TextEdit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextEdit.cpp; sourceTree = "<group>"; };
-		105DD39E20923C3C004E80C2 /* TextEdit.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextEdit.hpp; sourceTree = "<group>"; };
-		2B00A179017F52B08F0694CF /* projectTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projectTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = /System/Library/Frameworks/DiskArbitration.framework; sourceTree = "<absolute>"; };
-		5E9CD4D1FE5969E394D0B5B3 /* dummy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = dummy.cpp; path = mkspecs/features/data/dummy.cpp; sourceTree = QT_CLANG64_PATH; };
-		60D12DD5AF98EB30B3EBD182 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = lib/QtWidgets.framework; sourceTree = QT_CLANG64_PATH; };
-		6F2B3C2C86CCB77D25B3DAE6 /* .qmake.stash */ = {isa = PBXFileReference; lastKnownFileType = text; path = .qmake.stash; sourceTree = USER_DIRECTORY; };
-		7FC82CA4CCE0DB9B649A5B84 /* MainWindow.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MainWindow.hpp; sourceTree = "<group>"; };
-		8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
-		95B82C14B1D3D95A2BBD8972 /* MainWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainWindow.cpp; sourceTree = "<group>"; };
-		A1A67BEAA744704B29168D39 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
-		A276135214031EC866DC47DF /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = lib/QtCore.framework; sourceTree = QT_CLANG64_PATH; };
-		BB6C952D41876871B6A53E05 /* moc_MainWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_MainWindow.cpp; sourceTree = "<group>"; };
-		BFC4FAE7BD427160C6DA4607 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = lib/QtGui.framework; sourceTree = QT_CLANG64_PATH; };
-		CA8F8D3115263315B6EDE737 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		D4B32C2222F82AC56BADEB21 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		D1C883685E82D5676953459A /* Link Binary With Libraries */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				105CBF42209239F70084B3FF /* libportaudio.a in Link Binary With Libraries */,
-				105CBF40209239C40084B3FF /* libsndfile.a in Link Binary With Libraries */,
-				C95B2D280AC930479E49CD66 /* QtWidgets.framework in Link Binary With Libraries */,
-				57C2655F445FCF94CA12E45A /* QtGui.framework in Link Binary With Libraries */,
-				33B99A0E19B259F120678B7C /* QtCore.framework in Link Binary With Libraries */,
-				A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */,
-				8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */,
-				8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */,
-				E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */,
-			);
-			name = "Link Binary With Libraries";
-			runOnlyForDeploymentPostprocessing = 0;
+		BFC00C98CFC40706784E1691 = {
+			isa = PBXFileReference;
+			includeInIndex = 0;
+			explicitFileType = "wrapper.application";
+			path = "projectTemplate.app";
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		100EBFEC2091F69200BFCFEF /* MainWindow */ = {
-			isa = PBXGroup;
+		FE0A091FDBFB3E9C31B7A1BD = {
 			children = (
-				95B82C14B1D3D95A2BBD8972 /* MainWindow.cpp */,
-				7FC82CA4CCE0DB9B649A5B84 /* MainWindow.hpp */,
-			);
-			name = MainWindow;
+				"BFC00C98CFC40706784E1691");
+			isa = PBXGroup;
+			name = "Products";
 			sourceTree = "<group>";
 		};
-		100EBFED2091F6AA00BFCFEF /* PushButton */ = {
-			isa = PBXGroup;
+		E8C543AB96796ECAA2E65C57 = {
 			children = (
-				100EBFEE2091F6C300BFCFEF /* PushButton.cpp */,
-				100EBFEF2091F6C300BFCFEF /* PushButton.hpp */,
-			);
-			name = PushButton;
+				"2EB56BE3C2D93CDAB0C52E67",
+				"25B08E2869634E9BCBA333A2",
+				"B8254625CFD509ED2A24A166",
+				"74B182DB50CB5611B5C1C297",
+				"AF39DD055C3EF8226FBE929D",
+				"FE0A091FDBFB3E9C31B7A1BD");
+			isa = PBXGroup;
+			name = "projectTemplate";
 			sourceTree = "<group>";
 		};
-		105CBF4320923A0C0084B3FF /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				105CBF4520923A3E0084B3FF /* LibSndFile */,
-				105CBF4420923A380084B3FF /* LibPortAudio */,
-				2EB56BE3C2D93CDAB0C52E67 /* Sources */,
-			);
-			path = Dependencies;
-			sourceTree = "<group>";
-		};
-		105CBF4420923A380084B3FF /* LibPortAudio */ = {
-			isa = PBXGroup;
-			children = (
-				105CBF4620923A6B0084B3FF /* portaudio.h */,
-			);
-			path = LibPortAudio;
-			sourceTree = "<group>";
-		};
-		105CBF4520923A3E0084B3FF /* LibSndFile */ = {
-			isa = PBXGroup;
-			children = (
-				105CBF4720923A890084B3FF /* sndfile.h */,
-			);
-			path = LibSndFile;
-			sourceTree = "<group>";
-		};
-		10A01C8920923BCE0041C1CF /* TextEditButton */ = {
-			isa = PBXGroup;
-			children = (
-				105DD39D20923C3C004E80C2 /* TextEdit.cpp */,
-				105DD39E20923C3C004E80C2 /* TextEdit.hpp */,
-			);
-			name = TextEditButton;
-			sourceTree = "<group>";
-		};
-		25B08E2869634E9BCBA333A2 /* Generated Sources */ = {
-			isa = PBXGroup;
-			children = (
-				BB6C952D41876871B6A53E05 /* moc_MainWindow.cpp */,
-			);
-			name = "Generated Sources";
-			sourceTree = "<group>";
-		};
-		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				CA8F8D3115263315B6EDE737 /* main.cpp */,
-				100EBFEC2091F69200BFCFEF /* MainWindow */,
-				100EBFED2091F6AA00BFCFEF /* PushButton */,
-				10A01C8920923BCE0041C1CF /* TextEditButton */,
-			);
-			name = Sources;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		74B182DB50CB5611B5C1C297 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0F458838985948CF19C32861 /* projectTemplate.pro */,
-				6F2B3C2C86CCB77D25B3DAE6 /* .qmake.stash */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AF39DD055C3EF8226FBE929D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				105CBF41209239F70084B3FF /* libportaudio.a */,
-				105CBF3F209239C40084B3FF /* libsndfile.a */,
-				60D12DD5AF98EB30B3EBD182 /* QtWidgets.framework */,
-				BFC4FAE7BD427160C6DA4607 /* QtGui.framework */,
-				A276135214031EC866DC47DF /* QtCore.framework */,
-				2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */,
-				A1A67BEAA744704B29168D39 /* IOKit.framework */,
-				D4B32C2222F82AC56BADEB21 /* OpenGL.framework */,
-				8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B8254625CFD509ED2A24A166 /* Sources [moc_predefs] */ = {
-			isa = PBXGroup;
-			children = (
-				5E9CD4D1FE5969E394D0B5B3 /* dummy.cpp */,
-			);
-			name = "Sources [moc_predefs]";
-			sourceTree = "<group>";
-		};
-		E8C543AB96796ECAA2E65C57 /* projectTemplate */ = {
-			isa = PBXGroup;
-			children = (
-				105CBF4320923A0C0084B3FF /* Dependencies */,
-				25B08E2869634E9BCBA333A2 /* Generated Sources */,
-				B8254625CFD509ED2A24A166 /* Sources [moc_predefs] */,
-				74B182DB50CB5611B5C1C297 /* Supporting Files */,
-				AF39DD055C3EF8226FBE929D /* Frameworks */,
-				FE0A091FDBFB3E9C31B7A1BD /* Products */,
-			);
-			name = projectTemplate;
-			sourceTree = "<group>";
-		};
-		FE0A091FDBFB3E9C31B7A1BD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2B00A179017F52B08F0694CF /* projectTemplate.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		7F55BE6EF9A59563C4B2B355 /* projectTemplate */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "projectTemplate" */;
+		2E2494FBD5D3FE0B5476BCE5 = {
 			buildPhases = (
-				F7E50F631C51CD5B5DC0BC43 /* Compile Sources */,
-				D1C883685E82D5676953459A /* Link Binary With Libraries */,
-				30414803F31797EB689AE508 /* Copy Bundle Resources */,
-				99542592E9780B9225F24AA8 /* Embed Frameworks */,
-			);
-			buildRules = (
-				100EBFF22091F8B300BFCFEF /* PBXBuildRule */,
-			);
+				"5E618435888B9D49F8540165",
+				"7EF0942E79C014DCEC8976BC");
 			dependencies = (
-				F41FEFF12E56B6E3CAA0D319 /* PBXTargetDependency */,
-			);
-			name = projectTemplate;
-			productName = projectTemplate;
-			productReference = 2B00A179017F52B08F0694CF /* projectTemplate.app */;
-			productType = "com.apple.product-type.application";
+				);
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59;
+			isa = PBXAggregateTarget;
+			buildRules = (
+);
+			productName = "Qt Preprocess";
+			name = "Qt Preprocess";
 		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		6DB9C3763D02B1415CD9D565 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0930;
+		F067EC2E52C7B760A6F97DD9 = {
+			isa = PBXTargetDependency;
+			target = "2E2494FBD5D3FE0B5476BCE5";
+		};
+		608ECE6F5753265B659EF3AC = {
+			buildPhases = (
+				"F7E50F631C51CD5B5DC0BC43",
+				"D1C883685E82D5676953459A",
+				"30414803F31797EB689AE508",
+				"99542592E9780B9225F24AA8");
+			dependencies = (
+				"F067EC2E52C7B760A6F97DD9");
+			productReference = "BFC00C98CFC40706784E1691";
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59;
+			isa = PBXNativeTarget;
+			buildRules = (
+);
+			productType = "com.apple.product-type.application";
+			name = "projectTemplate";
+			productName = "projectTemplate";
+		};
+		3AA6C32AC930069E80220CF1 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=macosx*]" = "x86_64";
+				COPY_PHASE_STRIP = "NO";
+				ENABLE_BITCODE = "NO";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				ONLY_ACTIVE_ARCH = "YES";
+				PRODUCT_BUNDLE_IDENTIFIER = "IRiMaS.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "projectTemplate";
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QT_LIBRARY_SUFFIX = "_debug";
+				SDKROOT = "macosx";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang";
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				INFOPLIST_FILE = "Info.plist";
+				SYMROOT = "/Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/projectTemplateXcode2/projectTemplate.xcodeproj";
+				DYLIB_CURRENT_VERSION = "1.0.0";
+				DYLIB_COMPATIBILITY_VERSION = "1.0";
+				MACOSX_DEPLOYMENT_TARGET = "10.10";
+				HEADER_SEARCH_PATHS = (
+					".",
+					"../../../../Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers",
+					"../../../../Qt/5.10.1/clang_64/lib/QtGui.framework/Headers",
+					"../../../../Qt/5.10.1/clang_64/lib/QtCore.framework/Headers",
+					".",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AGL.framework/Headers",
+					"../../../../Qt/5.10.1/clang_64/mkspecs/macx-clang");
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
+					"/System/Library/Frameworks/");
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
+					"/Users/fredericdufeu/Qt/5.10.1/clang_64/lib");
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DEPRECATED_WARNINGS",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-O2",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DEPRECATED_WARNINGS",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_LDFLAGS = (
+						"-stdlib=libc++",
+						"-headerpad_max_install_names",
+						"-Wl,-rpath,@executable_path/Frameworks",
+						"-Wl,-rpath,/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
+						"-F/Users/fredericdufeu/Qt/5.10.1/clang_64/lib");
+				ARCHS = "x86_64";
 			};
-			buildConfigurationList = DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "projectTemplate" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
+			name = "Debug";
+		};
+		77418F46922677BB04ED38DD = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=macosx*]" = "x86_64";
+				COPY_PHASE_STRIP = "NO";
+				ENABLE_BITCODE = "NO";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				ONLY_ACTIVE_ARCH = "YES";
+				PRODUCT_BUNDLE_IDENTIFIER = "IRiMaS.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "projectTemplate";
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QT_LIBRARY_SUFFIX = "_debug";
+				SDKROOT = "macosx";
+				PRODUCT_NAME = "projectTemplate";
+			};
+			name = "Debug";
+		};
+		339EE1B2CC4FC24589A0EA95 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=macosx*]" = "x86_64";
+				COPY_PHASE_STRIP = "NO";
+				ENABLE_BITCODE = "NO";
+				PRODUCT_BUNDLE_IDENTIFIER = "IRiMaS.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "projectTemplate";
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "macosx";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang";
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				INFOPLIST_FILE = "Info.plist";
+				SYMROOT = "/Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/projectTemplateXcode2/projectTemplate.xcodeproj";
+				DYLIB_CURRENT_VERSION = "1.0.0";
+				DYLIB_COMPATIBILITY_VERSION = "1.0";
+				MACOSX_DEPLOYMENT_TARGET = "10.10";
+				HEADER_SEARCH_PATHS = (
+					".",
+					"../../../../Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers",
+					"../../../../Qt/5.10.1/clang_64/lib/QtGui.framework/Headers",
+					"../../../../Qt/5.10.1/clang_64/lib/QtCore.framework/Headers",
+					".",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AGL.framework/Headers",
+					"../../../../Qt/5.10.1/clang_64/mkspecs/macx-clang");
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
+					"/System/Library/Frameworks/");
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
+					"/Users/fredericdufeu/Qt/5.10.1/clang_64/lib");
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DEPRECATED_WARNINGS",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-O2",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DEPRECATED_WARNINGS",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_LDFLAGS = (
+						"-stdlib=libc++",
+						"-headerpad_max_install_names",
+						"-Wl,-rpath,@executable_path/Frameworks",
+						"-Wl,-rpath,/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
+						"-F/Users/fredericdufeu/Qt/5.10.1/clang_64/lib");
+				ARCHS = "x86_64";
+			};
+			name = "Release";
+		};
+		6666AA5E688052234F6758D8 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=macosx*]" = "x86_64";
+				COPY_PHASE_STRIP = "NO";
+				ENABLE_BITCODE = "NO";
+				PRODUCT_BUNDLE_IDENTIFIER = "IRiMaS.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "projectTemplate";
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "macosx";
+				PRODUCT_NAME = "projectTemplate";
+			};
+			name = "Release";
+		};
+		DAC4C1AA5EDEA1C85E9CA5E6 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"3AA6C32AC930069E80220CF1",
+				"339EE1B2CC4FC24589A0EA95");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		6CC3B5D2136C7CD6A5CF5A59 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"77418F46922677BB04ED38DD",
+				"6666AA5E688052234F6758D8");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		6DB9C3763D02B1415CD9D565 = {
 			hasScannedForEncodings = 1;
-			knownRegions = (
-				en,
-			);
-			mainGroup = E8C543AB96796ECAA2E65C57 /* projectTemplate */;
-			productRefGroup = FE0A091FDBFB3E9C31B7A1BD /* Products */;
+			compatibilityVersion = "Xcode 3.2";
+			isa = PBXProject;
+			mainGroup = "E8C543AB96796ECAA2E65C57";
+			productRefGroup = "FE0A091FDBFB3E9C31B7A1BD";
+			buildConfigurationList = "DAC4C1AA5EDEA1C85E9CA5E6";
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F55BE6EF9A59563C4B2B355 /* projectTemplate */,
-				6290F9F4B0CCF29541DCFB47 /* Qt Preprocess */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		30414803F31797EB689AE508 /* Copy Bundle Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "Copy Bundle Resources";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5E618435888B9D49F8540165 /* Qt Qmake */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "Qt Qmake";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C ${PROJECT_DIR} -f projectTemplate.xcodeproj/qt_makeqmake.mak";
-			showEnvVarsInLog = 0;
-		};
-		7EF0942E79C014DCEC8976BC /* Qt Preprocessors */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "Qt Preprocessors";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C ${PROJECT_DIR} -f projectTemplate.xcodeproj/qt_preprocess.mak";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		F7E50F631C51CD5B5DC0BC43 /* Compile Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				105DD3A020923CA2004E80C2 /* TextEdit.hpp in Compile Sources */,
-				105DD39F20923C3C004E80C2 /* TextEdit.cpp in Compile Sources */,
-				A2C703BB415706F6735302F6 /* main.cpp in Compile Sources */,
-				8EC4A3F260064EF4A062EA0F /* MainWindow.cpp in Compile Sources */,
-				ABA692EC7D08616105FA9500 /* moc_MainWindow.cpp in Compile Sources */,
-				100EBFF12091F8A600BFCFEF /* PushButton.hpp in Compile Sources */,
-				100EBFF02091F6C300BFCFEF /* PushButton.cpp in Compile Sources */,
-				105CBF3E2092387F0084B3FF /* dummy.cpp in Compile Sources */,
-			);
-			name = "Compile Sources";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F41FEFF12E56B6E3CAA0D319 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6290F9F4B0CCF29541DCFB47 /* Qt Preprocess */;
-			targetProxy = 100EBFEB2091F68200BFCFEF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		339EE1B2CC4FC24589A0EA95 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				"ARCHS[sdk=macosx*]" = x86_64;
-				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1.0;
-				DYLIB_CURRENT_VERSION = 1.0.0;
-				ENABLE_BITCODE = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					/Users/fredericdufeu/Qt/5.10.1/clang_64/lib,
-					/Users/fredericdufeu/Qt/5.10.1/clang_64/lib,
-				);
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					.,
-					/Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers,
-					/Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtGui.framework/Headers,
-					/Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtCore.framework/Headers,
-					.,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AGL.framework/Headers,
-					"/Users/fredericdufeu/Qt/5.10.1/clang_64/mkspecs/macx-clang",
-				);
-				INFOPLIST_FILE = Info.plist;
-				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
-				LIBRARY_SEARCH_PATHS = (
-					/Users/fredericdufeu/Qt/5.10.1/clang_64/lib,
-					/System/Library/Frameworks/,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = (
-					"-pipe",
-					"-O2",
-					"-Wall",
-					"-W",
-					"-fPIC",
-					"-DQT_DEPRECATED_WARNINGS",
-					"-DQT_NO_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-pipe",
-					"-stdlib=libc++",
-					"-O2",
-					"-std=gnu++11",
-					"-Wall",
-					"-W",
-					"-fPIC",
-					"-DQT_DEPRECATED_WARNINGS",
-					"-DQT_NO_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB",
-				);
-				OTHER_LDFLAGS = (
-					"-stdlib=libc++",
-					"-headerpad_max_install_names",
-					"-Wl,-rpath,@executable_path/Frameworks",
-					"-Wl,-rpath,/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
-					"-F/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "IRiMaS.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = projectTemplate;
-				QMAKE_PKGINFO_TYPEINFO = "????";
-				QT_LIBRARY_SUFFIX = "";
-				SDKROOT = macosx;
-				SYMROOT = /Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/1_MakingXcodeTemplate/projectTemplate/;
+				"608ECE6F5753265B659EF3AC",
+				"2E2494FBD5D3FE0B5476BCE5");
+			attributes = {
+				TargetAttributes = {
+				};
 			};
-			name = Release;
 		};
-		3AA6C32AC930069E80220CF1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				"ARCHS[sdk=macosx*]" = x86_64;
-				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1.0;
-				DYLIB_CURRENT_VERSION = 1.0.0;
-				ENABLE_BITCODE = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					/Users/fredericdufeu/Qt/5.10.1/clang_64/lib,
-					/Users/fredericdufeu/Qt/5.10.1/clang_64/lib,
-				);
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					.,
-					/Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers,
-					/Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtGui.framework/Headers,
-					/Users/fredericdufeu/Qt/5.10.1/clang_64/lib/QtCore.framework/Headers,
-					.,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AGL.framework/Headers,
-					"/Users/fredericdufeu/Qt/5.10.1/clang_64/mkspecs/macx-clang",
-				);
-				INFOPLIST_FILE = Info.plist;
-				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
-				LIBRARY_SEARCH_PATHS = (
-					/Users/fredericdufeu/Qt/5.10.1/clang_64/lib,
-					/System/Library/Frameworks/,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = (
-					"-pipe",
-					"-O2",
-					"-Wall",
-					"-W",
-					"-fPIC",
-					"-DQT_DEPRECATED_WARNINGS",
-					"-DQT_NO_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-pipe",
-					"-stdlib=libc++",
-					"-O2",
-					"-std=gnu++11",
-					"-Wall",
-					"-W",
-					"-fPIC",
-					"-DQT_DEPRECATED_WARNINGS",
-					"-DQT_NO_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB",
-				);
-				OTHER_LDFLAGS = (
-					"-stdlib=libc++",
-					"-headerpad_max_install_names",
-					"-Wl,-rpath,@executable_path/Frameworks",
-					"-Wl,-rpath,/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
-					"-F/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "IRiMaS.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = projectTemplate;
-				QMAKE_PKGINFO_TYPEINFO = "????";
-				QT_LIBRARY_SUFFIX = _debug;
-				SDKROOT = macosx;
-				SYMROOT = /Users/fredericdufeu/Desktop/IRiMaS_Software_Development/Current/1_MakingXcodeTemplate/projectTemplate/;
-			};
-			name = Debug;
-		};
-		6666AA5E688052234F6758D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				"ARCHS[sdk=macosx*]" = x86_64;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(QT_CLANG64_PATH)/lib";
-				HEADER_SEARCH_PATHS = (
-					.,
-					"$(QT_CLANG64_PATH)/lib/QtWidgets.framework/Headers",
-					"$(QT_CLANG64_PATH)/lib/QtGui.framework/Headers",
-					"$(QT_CLANG64_PATH)/lib/QtCore.framework/Headers",
-					.,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AGL.framework/Headers,
-					"$(QT_CLANG64_PATH)/mkspecs/macx-clang",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(QT_CLANG64_PATH)/lib",
-					/System/Library/Frameworks/,
-					/usr/local/Cellar/libsndfile/1.0.28/lib,
-					/usr/local/Cellar/portaudio/19.6.0/lib,
-				);
-				OTHER_LDFLAGS = (
-					"-stdlib=libc++",
-					"-headerpad_max_install_names",
-					"-Wl,-rpath,@executable_path/Frameworks",
-					"-Wl,-rpath,/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
-					"-F/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "IRiMaS.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = projectTemplate;
-				QMAKE_PKGINFO_TYPEINFO = "????";
-				QT_LIBRARY_SUFFIX = "";
-				SDKROOT = macosx;
-				SYMROOT = "$(PROJECT_DIR)/Build";
-			};
-			name = Release;
-		};
-		77418F46922677BB04ED38DD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				"ARCHS[sdk=macosx*]" = x86_64;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(QT_CLANG64_PATH)/lib";
-				GCC_OPTIMIZATION_LEVEL = 0;
-				HEADER_SEARCH_PATHS = (
-					.,
-					"$(QT_CLANG64_PATH)/lib/QtWidgets.framework/Headers",
-					"$(QT_CLANG64_PATH)/lib/QtGui.framework/Headers",
-					"$(QT_CLANG64_PATH)/lib/QtCore.framework/Headers",
-					.,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AGL.framework/Headers,
-					"$(QT_CLANG64_PATH)/mkspecs/macx-clang",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(QT_CLANG64_PATH)/lib",
-					/System/Library/Frameworks/,
-					/usr/local/Cellar/libsndfile/1.0.28/lib,
-					/usr/local/Cellar/portaudio/19.6.0/lib,
-				);
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"-stdlib=libc++",
-					"-headerpad_max_install_names",
-					"-Wl,-rpath,@executable_path/Frameworks",
-					"-Wl,-rpath,/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
-					"-F/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "IRiMaS.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = projectTemplate;
-				QMAKE_PKGINFO_TYPEINFO = "????";
-				QT_LIBRARY_SUFFIX = _debug;
-				SDKROOT = macosx;
-				SYMROOT = "$(PROJECT_DIR)/Build";
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "projectTemplate" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				77418F46922677BB04ED38DD /* Debug */,
-				6666AA5E688052234F6758D8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "projectTemplate" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3AA6C32AC930069E80220CF1 /* Debug */,
-				339EE1B2CC4FC24589A0EA95 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
 	};
-	rootObject = 6DB9C3763D02B1415CD9D565 /* Project object */;
+	rootObject = "6DB9C3763D02B1415CD9D565";
 }

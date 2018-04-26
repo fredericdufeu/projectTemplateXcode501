@@ -5,16 +5,16 @@
 //  Created by Frédéric Dufeu on 26/04/2018.
 //
 
-#include "TextEdit.hpp"
+#include "TextEditButton.hpp"
 
 
-TextEdit::TextEdit()
+TextEditButton::TextEditButton()
 {
     
 }
 
 
-TextEdit::~TextEdit()
+TextEditButton::~TextEditButton()
 {
     
 }

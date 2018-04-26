@@ -5,18 +5,18 @@
 //  Created by Frédéric Dufeu on 26/04/2018.
 //
 
-#ifndef TextEdit_hpp
-#define TextEdit_hpp
+#ifndef TextEditButton_hpp
+#define TextEditButton_hpp
 
 #include <QTextEdit>
 
-class TextEdit : public QTextEdit
+class TextEditButton : public QTextEdit
 {
     Q_OBJECT
     
 public:
-    TextEdit();
-    ~TextEdit();
+    TextEditButton();
+    ~TextEditButton();
     
 };
 

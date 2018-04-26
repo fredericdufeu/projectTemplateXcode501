@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7F55BE6EF9A59563C4B2B355"
-               BuildableName = "projectTemplate.app"
-               BlueprintName = "projectTemplate"
-               ReferencedContainer = "container:projectTemplate.xcodeproj">
+               BuildableName = "projectTemplate33.app"
+               BlueprintName = "projectTemplate33"
+               ReferencedContainer = "container:projectTemplate33.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "9E73BA301EF4580BE706E2EC"
                BuildableName = "Qt Test"
                BlueprintName = "Qt Test"
-               ReferencedContainer = "container:projectTemplate.xcodeproj">
+               ReferencedContainer = "container:projectTemplate33.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7F55BE6EF9A59563C4B2B355"
-            BuildableName = "projectTemplate.app"
-            BlueprintName = "projectTemplate"
-            ReferencedContainer = "container:projectTemplate.xcodeproj">
+            BuildableName = "projectTemplate33.app"
+            BlueprintName = "projectTemplate33"
+            ReferencedContainer = "container:projectTemplate33.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <CommandLineArguments>
@@ -73,9 +73,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7F55BE6EF9A59563C4B2B355"
-            BuildableName = "projectTemplate.app"
-            BlueprintName = "projectTemplate"
-            ReferencedContainer = "container:projectTemplate.xcodeproj">
+            BuildableName = "projectTemplate33.app"
+            BlueprintName = "projectTemplate33"
+            ReferencedContainer = "container:projectTemplate33.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -99,9 +99,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7F55BE6EF9A59563C4B2B355"
-            BuildableName = "projectTemplate.app"
-            BlueprintName = "projectTemplate"
-            ReferencedContainer = "container:projectTemplate.xcodeproj">
+            BuildableName = "projectTemplate33.app"
+            BlueprintName = "projectTemplate33"
+            ReferencedContainer = "container:projectTemplate33.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

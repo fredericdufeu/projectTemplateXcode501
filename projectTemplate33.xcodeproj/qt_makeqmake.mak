@@ -168,7 +168,7 @@ projectTemplate.xcodeproj/project.pbxproj: projectTemplate.pro $(QT_CLANG64_PATH
 		$(QT_CLANG64_PATH)/mkspecs/macx-clang/qmake.conf \
 		$(QT_CLANG64_PATH)/mkspecs/macx-xcode/qmake.conf \
 		$(QT_CLANG64_PATH)/mkspecs/features/spec_post.prf \
-		/Users/fredericdufeu/.qmake.stash \
+		$(USER_DIRECTORY)/.qmake.stash \
 		$(QT_CLANG64_PATH)/mkspecs/features/exclusive_builds.prf \
 		$(QT_CLANG64_PATH)/mkspecs/features/mac/sdk.prf \
 		$(QT_CLANG64_PATH)/mkspecs/features/toolchain.prf \
@@ -359,7 +359,7 @@ $(QT_CLANG64_PATH)/mkspecs/features/qt_config.prf:
 $(QT_CLANG64_PATH)/mkspecs/macx-clang/qmake.conf:
 $(QT_CLANG64_PATH)/mkspecs/macx-xcode/qmake.conf:
 $(QT_CLANG64_PATH)/mkspecs/features/spec_post.prf:
-/Users/fredericdufeu/.qmake.stash:
+$(USER_DIRECTORY)/.qmake.stash:
 $(QT_CLANG64_PATH)/mkspecs/features/exclusive_builds.prf:
 $(QT_CLANG64_PATH)/mkspecs/features/mac/sdk.prf:
 $(QT_CLANG64_PATH)/mkspecs/features/toolchain.prf:

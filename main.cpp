@@ -3,7 +3,7 @@
 
 #include "MainWindow.hpp"
 #include "PushButton.hpp"
-#include "TextEdit.hpp"
+#include "TextEditButton.hpp"
 
 int main(int argc, char *argv[])
 {
@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     MainWindow w;
     PushButton p;
     p.setText("Click Me");
-    TextEdit t;
+    TextEditButton t;
     
     w.setCentralWidget(static_cast<QWidget *>(&t));
     
