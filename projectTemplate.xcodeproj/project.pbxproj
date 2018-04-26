@@ -24,8 +24,10 @@
 /* Begin PBXBuildFile section */
 		100EBFF02091F6C300BFCFEF /* PushButton.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 100EBFEE2091F6C300BFCFEF /* PushButton.cpp */; };
 		100EBFF12091F8A600BFCFEF /* PushButton.hpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 100EBFEF2091F6C300BFCFEF /* PushButton.hpp */; };
+		105CBF3E2092387F0084B3FF /* dummy.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5E9CD4D1FE5969E394D0B5B3 /* dummy.cpp */; };
+		105CBF40209239C40084B3FF /* libsndfile.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 105CBF3F209239C40084B3FF /* libsndfile.a */; };
+		105CBF42209239F70084B3FF /* libportaudio.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 105CBF41209239F70084B3FF /* libportaudio.a */; };
 		33B99A0E19B259F120678B7C /* QtCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A276135214031EC866DC47DF /* QtCore.framework */; };
-		3980B76D8A52F6924B078E99 /* dummy.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5E9CD4D1FE5969E394D0B5B3 /* dummy.cpp */; settings = {ATTRIBUTES = (); }; };
 		57C2655F445FCF94CA12E45A /* QtGui.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = BFC4FAE7BD427160C6DA4607 /* QtGui.framework */; };
 		8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D4B32C2222F82AC56BADEB21 /* OpenGL.framework */; };
 		8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A1A67BEAA744704B29168D39 /* IOKit.framework */; };
@@ -47,7 +49,7 @@
 			outputFiles = (
 				"$(DERIVED_FILE_DIR)/${INPUT_FILE_BASE}_moc.cpp",
 			);
-			script = "/Users/${USER}/Qt/5.10.1/clang_64/bin/moc ${INPUT_FILE_PATH} -o ${DERIVED_FILE_DIR}/${INPUT_FILE_BASE}_moc.cpp";
+			script = "${QT_CLANG64_PATH}/bin/moc ${INPUT_FILE_PATH} -o ${DERIVED_FILE_DIR}/${INPUT_FILE_BASE}_moc.cpp";
 		};
 /* End PBXBuildRule section */
 
@@ -78,18 +80,22 @@
 		0F458838985948CF19C32861 /* projectTemplate.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = projectTemplate.pro; sourceTree = "<group>"; };
 		100EBFEE2091F6C300BFCFEF /* PushButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PushButton.cpp; sourceTree = "<group>"; };
 		100EBFEF2091F6C300BFCFEF /* PushButton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PushButton.hpp; sourceTree = "<group>"; };
+		105CBF3F209239C40084B3FF /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = libsndfile/1.0.28/lib/libsndfile.a; sourceTree = EXT_FRAMEWORKS_PATH; };
+		105CBF41209239F70084B3FF /* libportaudio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libportaudio.a; path = portaudio/19.6.0/lib/libportaudio.a; sourceTree = EXT_FRAMEWORKS_PATH; };
+		105CBF4620923A6B0084B3FF /* portaudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = portaudio.h; sourceTree = "<group>"; };
+		105CBF4720923A890084B3FF /* sndfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sndfile.h; sourceTree = "<group>"; };
 		2B00A179017F52B08F0694CF /* projectTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projectTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = /System/Library/Frameworks/DiskArbitration.framework; sourceTree = "<absolute>"; };
-		5E9CD4D1FE5969E394D0B5B3 /* dummy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = dummy.cpp; path = ../../../../../Qt/5.10.1/clang_64/mkspecs/features/data/dummy.cpp; sourceTree = "$(QT_CLANG64_PATH)"; };
-		60D12DD5AF98EB30B3EBD182 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = ../../../../../Qt/5.10.1/clang_64/lib/QtWidgets.framework; sourceTree = "$(QT_CLANG64_PATH)"; };
-		6F2B3C2C86CCB77D25B3DAE6 /* .qmake.stash */ = {isa = PBXFileReference; lastKnownFileType = file; name = .qmake.stash; path = ../../../../../.qmake.stash; sourceTree = "$(QT_CLANG64_PATH)"; };
+		5E9CD4D1FE5969E394D0B5B3 /* dummy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = dummy.cpp; path = mkspecs/features/data/dummy.cpp; sourceTree = QT_CLANG64_PATH; };
+		60D12DD5AF98EB30B3EBD182 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = lib/QtWidgets.framework; sourceTree = QT_CLANG64_PATH; };
+		6F2B3C2C86CCB77D25B3DAE6 /* .qmake.stash */ = {isa = PBXFileReference; lastKnownFileType = text; path = .qmake.stash; sourceTree = USER_DIRECTORY; };
 		7FC82CA4CCE0DB9B649A5B84 /* MainWindow.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MainWindow.hpp; sourceTree = "<group>"; };
 		8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		95B82C14B1D3D95A2BBD8972 /* MainWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainWindow.cpp; sourceTree = "<group>"; };
 		A1A67BEAA744704B29168D39 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
-		A276135214031EC866DC47DF /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = ../../../../../Qt/5.10.1/clang_64/lib/QtCore.framework; sourceTree = "$(QT_CLANG64_PATH)"; };
+		A276135214031EC866DC47DF /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = lib/QtCore.framework; sourceTree = QT_CLANG64_PATH; };
 		BB6C952D41876871B6A53E05 /* moc_MainWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_MainWindow.cpp; sourceTree = "<group>"; };
-		BFC4FAE7BD427160C6DA4607 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = ../../../../../Qt/5.10.1/clang_64/lib/QtGui.framework; sourceTree = "$(QT_CLANG64_PATH)"; };
+		BFC4FAE7BD427160C6DA4607 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = lib/QtGui.framework; sourceTree = QT_CLANG64_PATH; };
 		CA8F8D3115263315B6EDE737 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D4B32C2222F82AC56BADEB21 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -99,6 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105CBF42209239F70084B3FF /* libportaudio.a in Link Binary With Libraries */,
+				105CBF40209239C40084B3FF /* libsndfile.a in Link Binary With Libraries */,
 				C95B2D280AC930479E49CD66 /* QtWidgets.framework in Link Binary With Libraries */,
 				57C2655F445FCF94CA12E45A /* QtGui.framework in Link Binary With Libraries */,
 				33B99A0E19B259F120678B7C /* QtCore.framework in Link Binary With Libraries */,
@@ -131,6 +139,32 @@
 			name = PushButton;
 			sourceTree = "<group>";
 		};
+		105CBF4320923A0C0084B3FF /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				105CBF4520923A3E0084B3FF /* LibSndFile */,
+				105CBF4420923A380084B3FF /* LibPortAudio */,
+				2EB56BE3C2D93CDAB0C52E67 /* Sources */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		105CBF4420923A380084B3FF /* LibPortAudio */ = {
+			isa = PBXGroup;
+			children = (
+				105CBF4620923A6B0084B3FF /* portaudio.h */,
+			);
+			path = LibPortAudio;
+			sourceTree = "<group>";
+		};
+		105CBF4520923A3E0084B3FF /* LibSndFile */ = {
+			isa = PBXGroup;
+			children = (
+				105CBF4720923A890084B3FF /* sndfile.h */,
+			);
+			path = LibSndFile;
+			sourceTree = "<group>";
+		};
 		25B08E2869634E9BCBA333A2 /* Generated Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,11 +176,12 @@
 		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				100EBFED2091F6AA00BFCFEF /* PushButton */,
 				CA8F8D3115263315B6EDE737 /* main.cpp */,
 				100EBFEC2091F69200BFCFEF /* MainWindow */,
+				100EBFED2091F6AA00BFCFEF /* PushButton */,
 			);
 			name = Sources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		74B182DB50CB5611B5C1C297 /* Supporting Files */ = {
@@ -161,6 +196,8 @@
 		AF39DD055C3EF8226FBE929D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				105CBF41209239F70084B3FF /* libportaudio.a */,
+				105CBF3F209239C40084B3FF /* libsndfile.a */,
 				60D12DD5AF98EB30B3EBD182 /* QtWidgets.framework */,
 				BFC4FAE7BD427160C6DA4607 /* QtGui.framework */,
 				A276135214031EC866DC47DF /* QtCore.framework */,
@@ -183,7 +220,7 @@
 		E8C543AB96796ECAA2E65C57 /* projectTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				2EB56BE3C2D93CDAB0C52E67 /* Sources */,
+				105CBF4320923A0C0084B3FF /* Dependencies */,
 				25B08E2869634E9BCBA333A2 /* Generated Sources */,
 				B8254625CFD509ED2A24A166 /* Sources [moc_predefs] */,
 				74B182DB50CB5611B5C1C297 /* Supporting Files */,
@@ -295,7 +332,7 @@
 				ABA692EC7D08616105FA9500 /* moc_MainWindow.cpp in Compile Sources */,
 				100EBFF12091F8A600BFCFEF /* PushButton.hpp in Compile Sources */,
 				100EBFF02091F6C300BFCFEF /* PushButton.cpp in Compile Sources */,
-				3980B76D8A52F6924B078E99 /* dummy.cpp in Compile Sources */,
+				105CBF3E2092387F0084B3FF /* dummy.cpp in Compile Sources */,
 			);
 			name = "Compile Sources";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,23 +507,22 @@
 				"ARCHS[sdk=macosx*]" = x86_64;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"/Users/$(USER)/Qt/5.10.1/clang_64/lib",
-					"/Users/$(USER)/Qt/5.10.1/clang_64/lib",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(QT_CLANG64_PATH)/lib";
 				HEADER_SEARCH_PATHS = (
 					.,
-					"/Users/$(USER)/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers",
-					"/Users/$(USER)/Qt/5.10.1/clang_64/lib/QtGui.framework/Headers",
-					"/Users/$(USER)/Qt/5.10.1/clang_64/lib/QtCore.framework/Headers",
+					"$(QT_CLANG64_PATH)/lib/QtWidgets.framework/Headers",
+					"$(QT_CLANG64_PATH)/lib/QtGui.framework/Headers",
+					"$(QT_CLANG64_PATH)/lib/QtCore.framework/Headers",
 					.,
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AGL.framework/Headers,
-					"/Users/$(USER)/Qt/5.10.1/clang_64/mkspecs/macx-clang",
+					"$(QT_CLANG64_PATH)/mkspecs/macx-clang",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"/Users/$(USER)/Qt/5.10.1/clang_64/lib",
+					"$(QT_CLANG64_PATH)/lib",
 					/System/Library/Frameworks/,
+					/usr/local/Cellar/libsndfile/1.0.28/lib,
+					/usr/local/Cellar/portaudio/19.6.0/lib,
 				);
 				OTHER_LDFLAGS = (
 					"-stdlib=libc++",
@@ -511,24 +547,23 @@
 				"ARCHS[sdk=macosx*]" = x86_64;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"/Users/$(USER)/Qt/5.10.1/clang_64/lib",
-					"/Users/$(USER)/Qt/5.10.1/clang_64/lib",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(QT_CLANG64_PATH)/lib";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = (
 					.,
-					"/Users/$(USER)/Qt/5.10.1/clang_64/lib/QtWidgets.framework/Headers",
-					"/Users/$(USER)/Qt/5.10.1/clang_64/lib/QtGui.framework/Headers",
-					"/Users/$(USER)/Qt/5.10.1/clang_64/lib/QtCore.framework/Headers",
+					"$(QT_CLANG64_PATH)/lib/QtWidgets.framework/Headers",
+					"$(QT_CLANG64_PATH)/lib/QtGui.framework/Headers",
+					"$(QT_CLANG64_PATH)/lib/QtCore.framework/Headers",
 					.,
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AGL.framework/Headers,
-					"/Users/$(USER)/Qt/5.10.1/clang_64/mkspecs/macx-clang",
+					"$(QT_CLANG64_PATH)/mkspecs/macx-clang",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"/Users/$(USER)/Qt/5.10.1/clang_64/lib",
+					"$(QT_CLANG64_PATH)/lib",
 					/System/Library/Frameworks/,
+					/usr/local/Cellar/libsndfile/1.0.28/lib,
+					/usr/local/Cellar/portaudio/19.6.0/lib,
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
