@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		6290F9F4B0CCF29541DCFB47 /* Qt Preprocess */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "projectTemplate33" */;
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "projectTemplate501" */;
 			buildPhases = (
 				5E618435888B9D49F8540165 /* Qt Qmake */,
 				7EF0942E79C014DCEC8976BC /* Qt Preprocessors */,
@@ -88,7 +88,7 @@
 		105CBF4720923A890084B3FF /* sndfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sndfile.h; sourceTree = "<group>"; };
 		105DD39D20923C3C004E80C2 /* TextEditButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextEditButton.cpp; sourceTree = "<group>"; };
 		105DD39E20923C3C004E80C2 /* TextEditButton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextEditButton.hpp; sourceTree = "<group>"; };
-		2B00A179017F52B08F0694CF /* projectTemplate33.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projectTemplate33.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B00A179017F52B08F0694CF /* projectTemplate501.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projectTemplate501.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = /System/Library/Frameworks/DiskArbitration.framework; sourceTree = "<absolute>"; };
 		5E9CD4D1FE5969E394D0B5B3 /* dummy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = dummy.cpp; path = mkspecs/features/data/dummy.cpp; sourceTree = QT_CLANG64_PATH; };
 		60D12DD5AF98EB30B3EBD182 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = lib/QtWidgets.framework; sourceTree = QT_CLANG64_PATH; };
@@ -247,7 +247,7 @@
 		FE0A091FDBFB3E9C31B7A1BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B00A179017F52B08F0694CF /* projectTemplate33.app */,
+				2B00A179017F52B08F0694CF /* projectTemplate501.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -255,9 +255,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7F55BE6EF9A59563C4B2B355 /* projectTemplate33 */ = {
+		7F55BE6EF9A59563C4B2B355 /* projectTemplate501 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "projectTemplate33" */;
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "projectTemplate501" */;
 			buildPhases = (
 				F7E50F631C51CD5B5DC0BC43 /* Compile Sources */,
 				D1C883685E82D5676953459A /* Link Binary With Libraries */,
@@ -270,9 +270,9 @@
 			dependencies = (
 				F41FEFF12E56B6E3CAA0D319 /* PBXTargetDependency */,
 			);
-			name = projectTemplate33;
+			name = projectTemplate501;
 			productName = projectTemplate;
-			productReference = 2B00A179017F52B08F0694CF /* projectTemplate33.app */;
+			productReference = 2B00A179017F52B08F0694CF /* projectTemplate501.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -283,7 +283,7 @@
 			attributes = {
 				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "projectTemplate33" */;
+			buildConfigurationList = DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "projectTemplate501" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 1;
@@ -295,7 +295,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F55BE6EF9A59563C4B2B355 /* projectTemplate33 */,
+				7F55BE6EF9A59563C4B2B355 /* projectTemplate501 */,
 				6290F9F4B0CCF29541DCFB47 /* Qt Preprocess */,
 			);
 		};
@@ -599,7 +599,7 @@
 					"-F/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "IRiMaS.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = projectTemplate33;
+				PRODUCT_NAME = projectTemplate501;
 				QMAKE_PKGINFO_TYPEINFO = "????";
 				QT_LIBRARY_SUFFIX = "";
 				SDKROOT = macosx;
@@ -642,7 +642,7 @@
 					"-F/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "IRiMaS.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = projectTemplate33;
+				PRODUCT_NAME = projectTemplate501;
 				QMAKE_PKGINFO_TYPEINFO = "????";
 				QT_LIBRARY_SUFFIX = _debug;
 				SDKROOT = macosx;
@@ -653,7 +653,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "projectTemplate33" */ = {
+		6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "projectTemplate501" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				77418F46922677BB04ED38DD /* Debug */,
@@ -662,7 +662,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "projectTemplate33" */ = {
+		DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "projectTemplate501" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AA6C32AC930069E80220CF1 /* Debug */,
