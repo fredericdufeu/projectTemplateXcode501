@@ -18,7 +18,8 @@ int main(int argc, char *argv[])
     
     w.setCentralWidget(static_cast<QWidget *>(&t));
     
-    std::cout << "hello htis is Keitaro " << std::endl;
+    std::cout << "hello this is Keitaro " << std::endl;
+    std::cout << "Hi!!! How are you!!!" << std::endl;
     
     w.show();
 
