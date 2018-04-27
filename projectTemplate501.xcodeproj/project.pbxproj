@@ -24,9 +24,9 @@
 /* Begin PBXBuildFile section */
 		100EBFF02091F6C300BFCFEF /* PushButton.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 100EBFEE2091F6C300BFCFEF /* PushButton.cpp */; };
 		100EBFF12091F8A600BFCFEF /* PushButton.hpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 100EBFEF2091F6C300BFCFEF /* PushButton.hpp */; };
+		1037D3942093359E00324B79 /* libsndfile.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 1037D3932093359E00324B79 /* libsndfile.a */; };
+		1037D396209335BA00324B79 /* libportaudio.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 1037D395209335BA00324B79 /* libportaudio.a */; };
 		105CBF3E2092387F0084B3FF /* dummy.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5E9CD4D1FE5969E394D0B5B3 /* dummy.cpp */; };
-		105CBF40209239C40084B3FF /* libsndfile.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 105CBF3F209239C40084B3FF /* libsndfile.a */; };
-		105CBF42209239F70084B3FF /* libportaudio.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 105CBF41209239F70084B3FF /* libportaudio.a */; };
 		105DD39F20923C3C004E80C2 /* TextEditButton.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 105DD39D20923C3C004E80C2 /* TextEditButton.cpp */; };
 		105DD3A020923CA2004E80C2 /* TextEditButton.hpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 105DD39E20923C3C004E80C2 /* TextEditButton.hpp */; };
 		33B99A0E19B259F120678B7C /* QtCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A276135214031EC866DC47DF /* QtCore.framework */; };
@@ -82,8 +82,8 @@
 		0F458838985948CF19C32861 /* projectTemplate.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = projectTemplate.pro; sourceTree = "<group>"; };
 		100EBFEE2091F6C300BFCFEF /* PushButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PushButton.cpp; sourceTree = "<group>"; };
 		100EBFEF2091F6C300BFCFEF /* PushButton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PushButton.hpp; sourceTree = "<group>"; };
-		105CBF3F209239C40084B3FF /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = libsndfile/1.0.28/lib/libsndfile.a; sourceTree = EXT_FRAMEWORKS_PATH; };
-		105CBF41209239F70084B3FF /* libportaudio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libportaudio.a; path = portaudio/19.6.0/lib/libportaudio.a; sourceTree = EXT_FRAMEWORKS_PATH; };
+		1037D3932093359E00324B79 /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsndfile.a; sourceTree = LIBSOUNDFILE_PATH; };
+		1037D395209335BA00324B79 /* libportaudio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libportaudio.a; sourceTree = PORTAUDIO_PATH; };
 		105CBF4620923A6B0084B3FF /* portaudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = portaudio.h; sourceTree = "<group>"; };
 		105CBF4720923A890084B3FF /* sndfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sndfile.h; sourceTree = "<group>"; };
 		105DD39D20923C3C004E80C2 /* TextEditButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextEditButton.cpp; sourceTree = "<group>"; };
@@ -109,8 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				105CBF42209239F70084B3FF /* libportaudio.a in Link Binary With Libraries */,
-				105CBF40209239C40084B3FF /* libsndfile.a in Link Binary With Libraries */,
+				1037D3942093359E00324B79 /* libsndfile.a in Link Binary With Libraries */,
+				1037D396209335BA00324B79 /* libportaudio.a in Link Binary With Libraries */,
 				C95B2D280AC930479E49CD66 /* QtWidgets.framework in Link Binary With Libraries */,
 				57C2655F445FCF94CA12E45A /* QtGui.framework in Link Binary With Libraries */,
 				33B99A0E19B259F120678B7C /* QtCore.framework in Link Binary With Libraries */,
@@ -210,8 +210,8 @@
 		AF39DD055C3EF8226FBE929D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				105CBF41209239F70084B3FF /* libportaudio.a */,
-				105CBF3F209239C40084B3FF /* libsndfile.a */,
+				1037D395209335BA00324B79 /* libportaudio.a */,
+				1037D3932093359E00324B79 /* libsndfile.a */,
 				60D12DD5AF98EB30B3EBD182 /* QtWidgets.framework */,
 				BFC4FAE7BD427160C6DA4607 /* QtGui.framework */,
 				A276135214031EC866DC47DF /* QtCore.framework */,
@@ -588,15 +588,16 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(QT_CLANG64_PATH)/lib",
 					/System/Library/Frameworks/,
-					/usr/local/Cellar/libsndfile/1.0.28/lib,
-					/usr/local/Cellar/portaudio/19.6.0/lib,
+					"$(PORTAUDIO_PATH)/",
+					"$(LIBSOUNDFILE_PATH)/",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_LDFLAGS = (
 					"-stdlib=libc++",
 					"-headerpad_max_install_names",
 					"-Wl,-rpath,@executable_path/Frameworks",
-					"-Wl,-rpath,/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
-					"-F/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
+					"-Wl,-rpath,$(QT_CLANG64_PATH)/lib",
+					"-F$(QT_CLANG64_PATH)/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "IRiMaS.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = projectTemplate501;
@@ -630,16 +631,17 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(QT_CLANG64_PATH)/lib",
 					/System/Library/Frameworks/,
-					/usr/local/Cellar/libsndfile/1.0.28/lib,
-					/usr/local/Cellar/portaudio/19.6.0/lib,
+					"$(PORTAUDIO_PATH)/",
+					"$(LIBSOUNDFILE_PATH)/",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-stdlib=libc++",
 					"-headerpad_max_install_names",
 					"-Wl,-rpath,@executable_path/Frameworks",
-					"-Wl,-rpath,/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
-					"-F/Users/fredericdufeu/Qt/5.10.1/clang_64/lib",
+					"-Wl,-rpath,$(QT_CLANG64_PATH)/lib",
+					"-F$(QT_CLANG64_PATH)/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "IRiMaS.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = projectTemplate501;
