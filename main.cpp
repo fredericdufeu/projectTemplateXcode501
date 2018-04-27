@@ -5,6 +5,8 @@
 #include "PushButton.hpp"
 #include "TextEditButton.hpp"
 
+#include <iostream>
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -15,6 +17,8 @@ int main(int argc, char *argv[])
     TextEditButton t;
     
     w.setCentralWidget(static_cast<QWidget *>(&t));
+    
+    std::cout << "hello htis is Keitaro " << std::endl;
     
     w.show();
 
